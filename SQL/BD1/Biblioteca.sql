@@ -87,7 +87,7 @@ ALTER TABLE prestamo ADD FOREIGN KEY (codigoBibliotecarios) REFERENCES bibliotec
 ALTER TABLE prestamo ADD FOREIGN KEY (dni) REFERENCES miembros (dni);
 ALTER TABLE profesor ADD FOREIGN KEY (codigoEstudio) REFERENCES centroEstudio (codigoEstudio);
 ALTER TABLE profesor ADD FOREIGN KEY (dni) REFERENCES miembros (dni);
-SHOW TABLES;
+-- SHOW TABLES;
 
 
 
