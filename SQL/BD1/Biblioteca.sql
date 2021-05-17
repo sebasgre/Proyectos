@@ -18,10 +18,11 @@ CREATE TABLE descriptoresLibros (
 );
 
 CREATE TABLE ejemplares (
-    codigoEjemplares INT PRIMARY KEY,
+    codigoEjemplares INT,
     isbnID INT,
     numero INT,
-    tipo VARCHAR(20)
+    tipo VARCHAR(20),
+    PRIMARY KEY (codigoEjemplares, isbnID)
 );
 
 CREATE TABLE bibliotecarios (
@@ -88,6 +89,7 @@ ALTER TABLE prestamo ADD FOREIGN KEY (dni) REFERENCES miembros (dni);
 ALTER TABLE profesor ADD FOREIGN KEY (codigoEstudio) REFERENCES centroEstudio (codigoEstudio);
 ALTER TABLE profesor ADD FOREIGN KEY (dni) REFERENCES miembros (dni);
 -- SHOW TABLES;
+
 
 
 
