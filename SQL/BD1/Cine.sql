@@ -2,7 +2,8 @@ CREATE DATABASE cine;
 
 USE cine;
 
-CREATE TABLE personas(
+CREATE TABLE personas
+(
     dni_id INT PRIMARY KEY,
     nombre VARCHAR(20) NOT NULL,
     apellidoP VARCHAR(30) NOT NULL,
@@ -10,12 +11,14 @@ CREATE TABLE personas(
     dtNacimiento DATE
 );
 
-CREATE TABLE productoras(
+CREATE TABLE productoras
+(
     nombre_id VARCHAR(30) PRIMARY KEY,
     direccion VARCHAR(200)
 );
 
-CREATE TABLE peliculas(
+CREATE TABLE peliculas
+(
     titulo_id VARCHAR(40) PRIMARY KEY,
     añoproyeccion INT,
     duracion TIME,
@@ -24,14 +27,16 @@ CREATE TABLE peliculas(
     FOREIGN KEY(productora_id) REFERENCES productoras(nombre_id)
 );
 
-CREATE TABLE peliculas_generos(
+CREATE TABLE peliculas_generos
+(
     titulo_id VARCHAR(40),
     genero VARCHAR(30),
     PRIMARY KEY (titulo_id,genero),
     FOREIGN KEY (titulo_id) REFERENCES peliculas(titulo_id)
 );
 
-CREATE TABLE actuar(
+CREATE TABLE actuar
+(
     actor_id INT,
     pelicula_id VARCHAR(40),
     papel VARCHAR(30),
@@ -40,7 +45,8 @@ CREATE TABLE actuar(
     FOREIGN KEY (pelicula_id) REFERENCES peliculas(titulo_id)
 );
 
-CREATE TABLE actuar_citas(
+CREATE TABLE actuar_citas
+(
     actor_id INT,
     pelicula_id VARCHAR(40),
     cita VARCHAR(200),
@@ -48,7 +54,8 @@ CREATE TABLE actuar_citas(
     FOREIGN KEY (actor_id, pelicula_id) REFERENCES actuar(actor_id, pelicula_id)
 );
 
-CREATE TABLE dirigir(
+CREATE TABLE dirigir
+(
     director_id INT,
     pelicula_id VARCHAR(40),
     PRIMARY KEY (director_id,pelicula_id),
