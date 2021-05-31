@@ -81,10 +81,12 @@ public class Ventana extends JFrame {
             JOptionPane.showMessageDialog(this, "La ip deben ser 4 numeros enteros menores a 255");
             return;
         }
+        
         try {
             conexion = new Enviar(ip, leerPuerto);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "No se pudo conectar al servidor con la ip " + ip + " con el puerto " + leerPuerto);
+            JOptionPane.showMessageDialog(this,
+                    "No se pudo conectar al servidor con la ip " + ip + " con el puerto " + leerPuerto);
             return;
         }
 
@@ -110,7 +112,6 @@ public class Ventana extends JFrame {
         logger.info("Aqui se establece la conexion");
     }
 
-
     private void esperarConexion() {
         int puerto = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el puerto"));
         if (leerPuerto(puerto) != 0) {
@@ -120,7 +121,8 @@ public class Ventana extends JFrame {
                     throw new Exception("Debe colocar un entero");
                 }
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Debe colocar un número entero positivo mayor a 1024, intente de nuevo por favor");
+                JOptionPane.showMessageDialog(this,
+                        "Debe colocar un número entero positivo mayor a 1024, intente de nuevo por favor");
                 return;
             }
 
@@ -128,7 +130,8 @@ public class Ventana extends JFrame {
             try {
                 recibir = new Recibir(port, modelo);
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Hubo un error al crear/esperar la conexión, trate con otro puerto");
+                JOptionPane.showMessageDialog(this,
+                        "Hubo un error al crear/esperar la conexión, trate con otro puerto");
                 return;
             }
 
@@ -180,6 +183,5 @@ public class Ventana extends JFrame {
     private void añadirObservador() {
         modelo.addObserver(conexion);
     }
-
 
 }

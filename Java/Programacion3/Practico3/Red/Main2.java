@@ -6,7 +6,8 @@ import javax.swing.UnsupportedLookAndFeelException;
 import Practico3.Imagenes.Ventana;
 
 public class Main2 {
-    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException{
+    public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException,
+            InstantiationException, IllegalAccessException {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         Ventana v = new Ventana();
         v.setVisible(true);

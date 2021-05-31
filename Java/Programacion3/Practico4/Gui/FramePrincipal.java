@@ -20,7 +20,6 @@ import Practico4.Modelo.Persona;
 import Practico4.Vista.DibujarPersona;
 import Practico4.Vista.IDibujo;
 
-
 public class FramePrincipal extends JFrame {
     private final ListaOrdenada<Persona> listaPersonas = new ListaOrdenada<>();
     private final IDibujo dibujo = new DibujarPersona(listaPersonas);
@@ -69,12 +68,8 @@ public class FramePrincipal extends JFrame {
         JTextField edadField = new JTextField();
         JTextField alturaField = new JTextField();
         JTextField generoField = new JTextField();
-        Object[] message = {
-                "Nombre: ", nombreField,
-                "Edad: ", edadField,
-                "Altura: ", alturaField,
-                "Genero: ", generoField
-        };
+        Object[] message = { "Nombre: ", nombreField, "Edad: ", edadField, "Altura: ", alturaField, "Genero: ",
+                generoField };
 
         int option = JOptionPane.showConfirmDialog(null, message, "Nueva persona", JOptionPane.OK_CANCEL_OPTION);
         if (option == JOptionPane.OK_OPTION) {
@@ -86,7 +81,8 @@ public class FramePrincipal extends JFrame {
                     int edad = Integer.parseInt(edadField.getText());
                     int altura = Integer.parseInt(alturaField.getText());
                     String infoText = "";
-                    if (edad < 1 & !generoField.getText().toLowerCase().equals("masculino") && !generoField.getText().toLowerCase().equals("femenino") & (altura < 1 | altura > 250)) {
+                    if (edad < 1 & !generoField.getText().toLowerCase().equals("masculino")
+                            && !generoField.getText().toLowerCase().equals("femenino") & (altura < 1 | altura > 250)) {
                         infoText = "Los datos ingresados en edad, altura y genero no son validos";
                         control = true;
                     } else if (edad < 1) {
@@ -98,7 +94,8 @@ public class FramePrincipal extends JFrame {
                     } else if (altura > 250) {
                         infoText = "Ha sobrepasado la altura maxima";
                         control = true;
-                    } else if (!generoField.getText().toLowerCase().equals("masculino") && !generoField.getText().toLowerCase().equals("femenino")) {
+                    } else if (!generoField.getText().toLowerCase().equals("masculino")
+                            && !generoField.getText().toLowerCase().equals("femenino")) {
                         infoText = "El genero debe ser: Masculino o Femenino";
                         control = true;
                     }
@@ -110,7 +107,8 @@ public class FramePrincipal extends JFrame {
                         listaPersonas.insertar(p);
                         listaPersonas.addObserver(panel);
                         listaPersonas.cambioOk();
-                        logger.debug("Nombre: " + nombreField.getText() + " Edad: " + edad + " Altura: " + altura + " Genero: " + generoField.getText());
+                        logger.debug("Nombre: " + nombreField.getText() + " Edad: " + edad + " Altura: " + altura
+                                + " Genero: " + generoField.getText());
                     }
                 } else {
                     String texto;

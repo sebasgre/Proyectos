@@ -1,17 +1,40 @@
-package Lista;
+package Practico5.Lista;
 
 import java.util.Iterator;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
-public class Lista2<T> implements Iterable<T> {
+public class Lista<T> implements Iterable<T> {
 
     protected Contenedor<T> raiz;
+    protected Contenedor<T> cola;
     protected int tamano;
 
-    public Lista2() {
+    private final PropertyChangeSupport observed;
+
+    public Lista() {
         raiz = null;
+        cola = null;
         tamano = 0;
+        this.observed = new PropertyChangeSupport(this);
     }
-    
+
+    public void cambioOk() {
+        observed.firePropertyChange("Cambio", 1, 2);
+    }
+
+    public void addObserver(PropertyChangeListener observador) {
+        observed.addPropertyChangeListener(observador);
+    }
+
+    public Contenedor<T> getCola() {
+        return cola;
+    }
+
+    public void setCola(Contenedor<T> cola) {
+        this.cola = cola;
+    }
+
     public Contenedor<T> getRaiz() {
         return raiz;
     }
@@ -22,6 +45,14 @@ public class Lista2<T> implements Iterable<T> {
 
     public void insertar(T o) {
         Contenedor<T> nuevo = new Contenedor<T>(o);
+
+        if (tamano == 0) {
+            raiz = nuevo;
+            cola = nuevo;
+            return;
+        }
+
+        raiz.setAnterior(nuevo);
         nuevo.setSiguiente(raiz);
         raiz = nuevo;
         tamano++;
@@ -94,19 +125,17 @@ public class Lista2<T> implements Iterable<T> {
     }
 
     public void add(T o) {
-        if (raiz == null) {
-            insertar(o);
+        Contenedor<T> nuevo = new Contenedor<T>(o);
+
+        if (tamano == 0) {
+            raiz = nuevo;
+            cola = nuevo;
             return;
         }
 
-        Contenedor<T> actual = raiz;
-        Contenedor<T> nuevo = new Contenedor<T>(o);
-        while (actual.getSiguiente() != null) {
-            actual = actual.getSiguiente();
-        }
-
-        // Aqui tenemos al ultimo
-        actual.setSiguiente(nuevo);
+        cola.setSiguiente(nuevo);
+        nuevo.setAnterior(cola);
+        cola = nuevo;
         tamano++;
     }
 
@@ -125,14 +154,14 @@ public class Lista2<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return new IteradorLista<T>(raiz);
+        return new IteradorListaDoble<T>(raiz);
     }
 
-    class IteradorLista<T> implements Iterator<T> {
+    class IteradorListaDoble<T> implements Iterator<T> {
 
         private Contenedor<T> actual;
 
-        public IteradorLista(Contenedor<T> inicio) {
+        public IteradorListaDoble(Contenedor<T> inicio) {
             actual = inicio;
         }
 
@@ -153,10 +182,12 @@ public class Lista2<T> implements Iterable<T> {
     class Contenedor<T> {
         private T contenido;
         private Contenedor<T> siguiente;
+        private Contenedor<T> anterior;
 
         public Contenedor(T c) {
             contenido = c;
             siguiente = null;
+            anterior = null;
         }
 
         public T getContenido() {
@@ -173,6 +204,14 @@ public class Lista2<T> implements Iterable<T> {
 
         public void setSiguiente(Contenedor<T> siguiente) {
             this.siguiente = siguiente;
+        }
+
+        public Contenedor<T> getAnterior() {
+            return anterior;
+        }
+
+        public void setAnterior(Contenedor<T> anterior) {
+            this.anterior = anterior;
         }
     }
 

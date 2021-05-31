@@ -1,11 +1,9 @@
 package Lista;
 
-import java.util.ArrayList;
-
 public class Main {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        ArrayList<String> palabras = new ArrayList();
+        /*ArrayList<String> palabras = new ArrayList();
         palabras.add("Hugo");
         palabras.add("Paco");
         palabras.add("Luis");
@@ -23,7 +21,7 @@ public class Main {
         a.insertar("Paco");
         a.insertar("Luis");
         System.out.println("Nuestra Lista2: " + a);
-        System.out.println("Tamano: " + a.getTamano());
+        System.out.println("Tamano: " + a.tamano());
 
         Lista2<String> b = new Lista2<>();
         b.add("Hugo");
@@ -32,6 +30,30 @@ public class Main {
         b.add("Sebastian");
         b.add("Jose");
         System.out.println("Nuestra Lista2: " + b);
-        System.out.println("Tamano: " + b.getTamano());
+        System.out.println("Tamano: " + b.tamano());*/
+        Lista2<String> lista2 = crearLista();
+		System.out.println(lista2);
+
+		eliminarUnElemento(lista2);		
+		
+		System.out.println(lista2);
     }
+
+    public static Lista2<String> crearLista() {
+		Lista2<String> lista2 = new Lista2<String>();
+		lista2.insertar("hugo");
+		lista2.insertar("paco");
+		lista2.insertar("luis");
+		lista2.insertar("laura");
+		
+		return lista2;
+	}
+	
+	public static void eliminarUnElemento(Lista2<String> lista2) {
+		try {
+			lista2.eliminar(2);
+		} catch (final Exception e) {
+			System.out.println("Mensaje bonito para el cliente: Usó un indice fuera del tamaño de la lista. No se eliminó nada");
+		}
+	}
 }

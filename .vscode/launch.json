@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Attach",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": "<debug port of the debuggee>"
+        },
+        {
+            "type": "java",
+            "name": "Launch with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "",
+            "args": "${command:SpecifyProgramArgs}"
+        },
+        {
+            "type": "java",
+            "name": "Launch External Terminal",
+            "request": "launch",
+            "console": "externalTerminal",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "request": "attach",
+            "name": "Attach by Process ID",
+            "processId": "${command:PickJavaProcess}"
+        },
+    {
+        "type": "java",
+        "name": "Launch Current File",
+        "request": "launch",
+        "mainClass": "${file}"
+    },
+        {
+            "type": "java",
+            "name": "Launch mainClientes",
+            "request": "launch",
+            "mainClass": "Practico5.Main.mainClientes",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainServidor",
+            "request": "launch",
+            "mainClass": "Practico5.Main.mainServidor",
+            "projectName": "Proyectos_f2fa4dc5"
+        }
+    ]
+}
