@@ -1,4 +1,4 @@
-package Practico5.GUI;
+package prueba.GUI;
 
 public enum ImageIcon {
 

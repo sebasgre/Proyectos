@@ -1,19 +1,21 @@
-package Practico5.GUI;
+package prueba.GUI;
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
+
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-public class panelLogin extends JPanel {
+public class panelLogo extends JPanel {
     private Image imagen;
 
-    public panelLogin() {
+    public panelLogo() {
         imagen = new ImageIcon(
-                "C:\\Users\\Sebastian\\OneDrive\\Documentos\\Visual Studio Code\\Proyectos\\Java\\Programacion3\\practico5\\Fotos\\fondo.png")
+                "C:\\Users\\Sebastian\\OneDrive\\Documentos\\Visual Studio Code\\Proyectos\\Java\\Programacion3\\practico5\\Fotos\\logo.png")
                         .getImage();
     }
-    
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -22,7 +24,7 @@ public class panelLogin extends JPanel {
 
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(450, 400);
+        return new Dimension(465, 408);
     }
 
 }

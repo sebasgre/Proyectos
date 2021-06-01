@@ -1,4 +1,4 @@
-package Practico5.Vista;
+package prueba.Vista;
 import java.awt.*;
 
 public interface iDibujo {

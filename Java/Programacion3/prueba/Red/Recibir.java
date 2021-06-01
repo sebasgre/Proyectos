@@ -1,4 +1,4 @@
-package Practico5.Red;
+package prueba.Red;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,8 +11,10 @@ public class Recibir implements Runnable {
     private BufferedReader in;
 
     public Recibir(int port) throws IOException {
+
         ServerSocket srv = null;
         clt = null;
+
         try {
             srv = new ServerSocket(port);
         } catch (IOException e) {
@@ -22,15 +24,16 @@ public class Recibir implements Runnable {
         try {
             clt = srv.accept();
         } catch (Exception e) {
-
+            throw e;
         } finally {
             try {
                 srv.close();
             } catch (IOException e) {
-
+                throw e;
             }
         }
         in = new BufferedReader(new InputStreamReader(clt.getInputStream()));
+
     }
 
     public Recibir(Socket sck) throws IOException {

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Cliente",
+            "request": "launch",
+            "mainClass": "Red.Cliente",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainServidor",
+            "request": "launch",
+            "mainClass": "Main.mainServidor",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainClientes",
+            "request": "launch",
+            "mainClass": "Main.mainClientes",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Attach",
             "request": "attach",
             "hostName": "localhost",
@@ -37,12 +58,12 @@
             "name": "Attach by Process ID",
             "processId": "${command:PickJavaProcess}"
         },
-    {
-        "type": "java",
-        "name": "Launch Current File",
-        "request": "launch",
-        "mainClass": "${file}"
-    },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
         {
             "type": "java",
             "name": "Launch mainClientes",

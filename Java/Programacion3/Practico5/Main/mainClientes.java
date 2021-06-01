@@ -1,12 +1,9 @@
-package Practico5.Main;
-
-import Practico5.GUI.ventanaUsuario;
+package Main;
+import Red.Cliente;
 
 public class mainClientes {
     public static void main(String[] args) {
-        ventanaUsuario ventana = new ventanaUsuario();
-        ventana.setTitle("Clientes");
-        ventana.init();
-        ventana.setVisible(true);
+        Cliente cliente = new Cliente();
+        cliente.setVisible(true);
     }
 }

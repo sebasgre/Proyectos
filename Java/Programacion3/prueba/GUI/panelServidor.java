@@ -1,29 +1,24 @@
-package Practico5.GUI;
+package prueba.GUI;
 
-import java.awt.Graphics;
-import javax.swing.JPanel;
 import java.awt.Dimension;
-
-import Practico5.Red.Enviar;
-import Practico5.Vista.iDibujo;
+import java.awt.Graphics;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-public class panelClientes extends JPanel implements PropertyChangeListener {
+import javax.swing.JPanel;
+
+import prueba.Vista.iDibujo;
+
+public class panelServidor extends JPanel implements PropertyChangeListener {
     private iDibujo dibujo;
-    private Enviar enviar;
-    
-    public panelClientes(iDibujo di) {
+
+    public panelServidor(iDibujo di) {
         dibujo = di;
-    }
-    
-    public void setEnviar(Enviar enviar) {
-        this.enviar = enviar;
     }
 
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(300, 300);
+        return new Dimension(600, 400);
     }
 
     @Override

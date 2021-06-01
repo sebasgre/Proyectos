@@ -1,10 +1,8 @@
-package Practico5.Main;
-
-import Practico5.GUI.ventanaPortada;
-
+package Main;
+import Red.Servidor;
 public class mainServidor {
     public static void main(String[] args) {
-        ventanaPortada ventana = new  ventanaPortada();
-        ventana.setVisible(true);
+        Servidor servidor = new Servidor();
+        servidor.setVisible(true);
     }
 }

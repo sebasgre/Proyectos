@@ -1,4 +1,4 @@
-package Practico5.GUI;
+package prueba.GUI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -14,10 +14,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import Practico5.Lista.Lista;
-import Practico5.Red.Enviar;
-import Practico5.Red.Recibir;
-import Practico5.Modelo.Mensaje;
+import prueba.Lista.Lista;
+import prueba.Modelo.Mensaje;
+import prueba.Red.Enviar;
+import prueba.Red.Recibir;
 
 public class ventanaUsuario extends JFrame {
     private panelLogin panel = new panelLogin();
@@ -29,6 +29,7 @@ public class ventanaUsuario extends JFrame {
     private JTextField campoNombre = new JTextField();
     private JTextField campoHost = new JTextField();
     private JTextField campoPuerto = new JTextField();
+    private Lista<Mensaje> lista = new Lista<>();
     private boolean control = false;
 
     public ventanaUsuario() {
@@ -102,6 +103,8 @@ public class ventanaUsuario extends JFrame {
 
     public void conectarse() {
         control = true;
+        conexion.setNombre(campoNombre.getText());
+        
         String ip = campoHost.getText();
         int puerto = Integer.parseInt(campoPuerto.getText());
         int leerPuerto = leerPuerto(puerto);
@@ -182,7 +185,6 @@ public class ventanaUsuario extends JFrame {
     }
 
     private void añadirObservador() {
-        Lista<Mensaje> lista = new Lista();
         lista.addObserver(conexion);
     }
 

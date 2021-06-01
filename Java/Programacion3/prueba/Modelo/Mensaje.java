@@ -1,11 +1,17 @@
-package Practico5.Modelo;
+package prueba.Modelo;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Mensaje {
     String mensaje;
     String nombre;
-    Date dateTime;
+    LocalDateTime dateTime;
+
+    public Mensaje(String mensaje, String nombre,  LocalDateTime dateTime2) {
+        this.mensaje = mensaje;
+        this.nombre = nombre;
+        this.dateTime = dateTime2;
+    }
 
     public String getMensaje() {
         return mensaje;
@@ -23,12 +29,14 @@ public class Mensaje {
         this.nombre = nombre;
     }
 
-    public Date getDateTime() {
+    public LocalDateTime getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(Date dateTime) {
+    public void setDateTime(LocalDateTime dateTime) {
         this.dateTime = dateTime;
     }
+
+    
 
 }
