@@ -18,7 +18,6 @@ import javax.swing.JTextField;
 public class Cliente extends JFrame {
     private JPanel menu = new JPanel();
     private JTextField usuario = new JTextField();
-    private String cliente;
 
     public Cliente() {
         this.setTitle("Cliente");

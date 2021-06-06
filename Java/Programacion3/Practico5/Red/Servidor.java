@@ -17,7 +17,6 @@ public class Servidor extends JFrame {
     private JLabel participantes = new JLabel();
     private JTextArea jPanelChat = new JTextArea();
     private JTextArea jPanelPaticipa = new JTextArea();
-    private int port = 0;
     private ServerSocket ss;
     private HashMap clienteColl = new HashMap();
 
@@ -106,12 +105,12 @@ public class Servidor extends JFrame {
                         String key = (String) itr.next();
                         if (!key.equalsIgnoreCase(ID)) {
                             try {
-                                new DataOutputStream(((Socket) clienteColl.get(key)).getOutputStream()).writeUTF("< " + ID + "A todos >" + i);
+                                new DataOutputStream(((Socket) clienteColl.get(key)).getOutputStream()).writeUTF("< " + ID + " A todos dice >" + i);
                             } catch (Exception e) {
                             }
                         }
                     }
-                    jPanelChat.append("< " + ID + "A todos >" + i + "\n");
+                    jPanelChat.append("< " + ID + " A todos dice >" + i + "\n");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -142,7 +141,7 @@ public class Servidor extends JFrame {
                         new DataOutputStream(((Socket) clienteColl.get(key)).getOutputStream()).writeUTF(":;.,/=" + ids);
                     } catch (Exception e) {
                         clienteColl.remove(key);
-                        jPanelPaticipa.append(key + ":Salio" + "\n");
+                        jPanelPaticipa.append(key + " :Salio" + "\n");
                     }
                 }
             } catch (Exception e) {
