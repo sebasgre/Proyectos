@@ -14,7 +14,6 @@ public class DibujoFigura implements IDibujo {
 
     @Override
     public void dibujar(Graphics g) {
-        g.drawRect(objeto.getX(), objeto.getY(),
-                objeto.getAncho(), objeto.getAlto());
+        g.drawRect(objeto.getX(), objeto.getY(), objeto.getAncho(), objeto.getAlto());
     }
 }

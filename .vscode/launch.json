@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Practico4.Main.Main",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Cliente",
             "request": "launch",
             "mainClass": "Red.Cliente",
