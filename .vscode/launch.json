@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Nose",
+            "request": "launch",
+            "mainClass": "Logica.Nose",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hola",
+            "request": "launch",
+            "mainClass": "GUI.Hola",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Practico4.Main.Main",
