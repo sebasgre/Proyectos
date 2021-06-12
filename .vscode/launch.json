@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FrameArbol",
+            "request": "launch",
+            "mainClass": "Arboles.gui.FrameArbol",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Nose",
             "request": "launch",
             "mainClass": "Logica.Nose",
