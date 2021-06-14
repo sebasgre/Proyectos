@@ -1,5 +1,5 @@
-package Main;
-import Red.Cliente;
+package Practico5.Main;
+import Practico5.Red.Cliente;
 
 public class mainClientes {
     public static void main(String[] args) {

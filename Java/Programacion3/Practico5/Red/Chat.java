@@ -1,4 +1,4 @@
-package Red;
+package Practico5.Red;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
