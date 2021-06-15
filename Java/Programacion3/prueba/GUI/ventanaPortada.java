@@ -1,4 +1,4 @@
-package prueba.GUI;
+package Java.Programacion3.prueba.GUI;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -34,7 +34,7 @@ public class ventanaPortada extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 cambioPanel();
                 Ventana ventana = new Ventana();
-                ventana.initServidor();
+                //ventana.initServidor();
                 ventana.setVisible(true);
             }
         });

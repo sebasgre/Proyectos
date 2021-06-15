@@ -1,8 +1,8 @@
-package Practico4.Modelo;
+package Java.Programacion3.Practico4.Modelo;
 
 import java.util.Comparator;
 
-import Practico4.Lista.ComparadorPersona;
+import Java.Programacion3.Practico4.Lista.ComparadorPersona;
 
 public class Persona implements Comparable<Persona> {
     private int edad;

@@ -1,6 +1,6 @@
-package prueba.Main;
+package Java.Programacion3.prueba.Main;
 
-import prueba.GUI.ventanaUsuario;
+import Java.Programacion3.prueba.GUI.ventanaUsuario;
 
 public class mainClientes {
     public static void main(String[] args) {

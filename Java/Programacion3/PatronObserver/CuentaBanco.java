@@ -1,4 +1,4 @@
-package PatronObserver;
+package Java.Programacion3.PatronObserver;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,4 +1,4 @@
-package Practico4.Lista;
+package Java.Programacion3.Practico4.Lista;
 
 import java.util.Iterator;
 

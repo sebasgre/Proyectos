@@ -1,4 +1,4 @@
-package Practico3.Imagenes;
+package Java.Programacion3.Practico3.Imagenes;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JPanel;
 
-import Practico3.Red.Enviar;
+import Java.Programacion3.Practico3.Red.Enviar;
 
 
 public class PanelImagen extends JPanel implements PropertyChangeListener, MouseListener {

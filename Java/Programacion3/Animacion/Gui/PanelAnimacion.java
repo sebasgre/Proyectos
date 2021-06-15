@@ -1,4 +1,4 @@
-package Animacion.Gui;
+package Java.Programacion3.Animacion.Gui;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -7,7 +7,7 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JPanel;
 
-import Animacion.Vista.IDibujo;
+import Java.Programacion3.Animacion.Vista.IDibujo;
 
 public class PanelAnimacion extends JPanel implements PropertyChangeListener {
 

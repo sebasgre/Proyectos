@@ -1,4 +1,4 @@
-package prueba.GUI;
+package Java.Programacion3.prueba.GUI;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -7,7 +7,7 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JPanel;
 
-import prueba.Vista.iDibujo;
+import Java.Programacion3.prueba.Vista.iDibujo;
 
 public class panelServidor extends JPanel implements PropertyChangeListener {
     private iDibujo dibujo;

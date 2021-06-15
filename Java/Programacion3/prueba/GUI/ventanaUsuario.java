@@ -1,4 +1,4 @@
-package prueba.GUI;
+package Java.Programacion3.prueba.GUI;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -14,10 +14,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import prueba.Lista.Lista;
-import prueba.Modelo.Mensaje;
-import prueba.Red.Enviar;
-import prueba.Red.Recibir;
+import Java.Programacion3.prueba.Lista.Lista;
+import Java.Programacion3.prueba.Modelo.Mensaje;
+import Java.Programacion3.prueba.Red.Enviar;
+import Java.Programacion3.prueba.Red.Recibir;
 
 public class ventanaUsuario extends JFrame {
     private panelLogin panel = new panelLogin();
@@ -88,7 +88,7 @@ public class ventanaUsuario extends JFrame {
                 if (control == true) {
                     cambioPanel();
                     Ventana ventana = new Ventana();
-                    ventana.initClientes();
+                    //ventana.initClientes();
                     ventana.setVisible(true);
                 }
             }

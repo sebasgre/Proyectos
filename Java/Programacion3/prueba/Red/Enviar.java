@@ -1,18 +1,17 @@
-package prueba.Red;
+package Java.Programacion3.prueba.Red;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 
-import prueba.Lista.Lista;
-import prueba.Modelo.Mensaje;
-
-import java.io.OutputStream;
+import Java.Programacion3.prueba.Lista.Lista;
+import Java.Programacion3.prueba.Modelo.Mensaje;
 
 public class Enviar implements PropertyChangeListener {
     private Socket sck;

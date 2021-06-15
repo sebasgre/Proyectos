@@ -1,10 +1,10 @@
-package Practico4.Vista;
+package Java.Programacion3.Practico4.Vista;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import Practico4.Lista.ListaOrdenada;
-import Practico4.Modelo.Persona;
+import Java.Programacion3.Practico4.Lista.ListaOrdenada;
+import Java.Programacion3.Practico4.Modelo.Persona;
 
 public class DibujarPersona implements IDibujo {
     private ListaOrdenada<Persona> lista;

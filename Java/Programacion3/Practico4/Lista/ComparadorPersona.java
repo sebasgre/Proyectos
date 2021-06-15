@@ -1,11 +1,11 @@
-package Practico4.Lista;
+package Java.Programacion3.Practico4.Lista;
 
 import java.util.Comparator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Practico4.Modelo.Persona;
+import Java.Programacion3.Practico4.Modelo.Persona;
 
 public class ComparadorPersona implements Comparator<Persona> {
     private final static Logger logger = LogManager.getLogger();

@@ -1,4 +1,4 @@
-package prueba.Red;
+package Java.Programacion3.prueba.Red;
 
 import java.io.BufferedReader;
 import java.io.IOException;

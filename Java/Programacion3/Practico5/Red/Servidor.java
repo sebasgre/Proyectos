@@ -1,4 +1,4 @@
-package Practico5.Red;
+package Java.Programacion3.Practico5.Red;
 import java.awt.Color;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

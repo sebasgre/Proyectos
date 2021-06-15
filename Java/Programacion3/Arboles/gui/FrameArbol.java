@@ -1,9 +1,11 @@
-package Arboles.gui;
+package Java.Programacion3.Arboles.gui;
+
+import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
-import java.awt.BorderLayout;
-import Arboles.Arbol;
-import Arboles.Persona;
+
+import Java.Programacion3.Arboles.Arbol;
+import Java.Programacion3.Arboles.Persona;
 
 public class FrameArbol extends JFrame {
     private Arbol<Persona> modelo;

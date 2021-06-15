@@ -1,12 +1,12 @@
-package Arboles.gui;
+package Java.Programacion3.Arboles.gui;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
-import Arboles.Arbol;
-import Arboles.Persona;
+import Java.Programacion3.Arboles.Arbol;
+import Java.Programacion3.Arboles.Persona;
 
 public class PanelArbol extends JPanel {
     private Arbol<Persona> modelo;

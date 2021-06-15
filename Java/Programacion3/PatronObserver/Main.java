@@ -1,4 +1,4 @@
-package PatronObserver;
+package Java.Programacion3.PatronObserver;
 
 public class Main {
     public static void main(String[] args) {

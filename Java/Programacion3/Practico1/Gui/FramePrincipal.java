@@ -1,4 +1,4 @@
-package Practico1.Gui;
+package Java.Programacion3.Practico1.Gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -11,9 +11,9 @@ import javax.swing.JMenuItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Practico1.Modelo.Linea;
-import Practico1.Vista.DibujoLinea;
-import Practico1.Vista.IDibujo;
+import Java.Programacion3.Practico1.Modelo.Linea;
+import Java.Programacion3.Practico1.Vista.DibujoLinea;
+import Java.Programacion3.Practico1.Vista.IDibujo;
 
 
 public class FramePrincipal extends JFrame {

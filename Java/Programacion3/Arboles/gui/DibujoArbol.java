@@ -1,11 +1,13 @@
-package Arboles.gui;
+package Java.Programacion3.Arboles.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import Animacion.Vista.IDibujo;
-import Arboles.Arbol;
-import Arboles.Persona;
-import Arboles.Arbol.Contenedor;
+
+import Java.Programacion3.Animacion.Vista.IDibujo;
+import Java.Programacion3.Arboles.Arbol;
+import Java.Programacion3.Arboles.Persona;
+import Java.Programacion3.Arboles.Arbol.Contenedor;
+
 
 public class DibujoArbol implements IDibujo {
     public static final int ANCHO_CONTENEDOR = 40;

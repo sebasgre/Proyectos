@@ -1,4 +1,4 @@
-package prueba.Modelo;
+package Java.Programacion3.prueba.Modelo;
 
 import java.time.LocalDateTime;
 

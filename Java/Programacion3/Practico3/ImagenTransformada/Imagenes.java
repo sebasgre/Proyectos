@@ -1,4 +1,4 @@
-package Practico3.ImagenTransformada;
+package Java.Programacion3.Practico3.ImagenTransformada;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
-import Practico3.Imagenes.Modelo;
+import Java.Programacion3.Practico3.Imagenes.Modelo;
 
 public class Imagenes extends Transformacion {
     private BufferedImage imagen = null;

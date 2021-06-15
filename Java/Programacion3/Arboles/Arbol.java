@@ -1,9 +1,9 @@
-package Arboles;
+package Java.Programacion3.Arboles;
 
-import Lista.Lista2;
+import Java.Programacion3.Lista.Lista2;
 
 public class Arbol<T extends Identificable> {
-    private Contenedor<T> raiz;
+    protected Contenedor<T> raiz;
     private static int alpha = 5;
 
     public Contenedor<T> getRaiz() {

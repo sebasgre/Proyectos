@@ -1,4 +1,4 @@
-package Lista;
+package Java.Programacion3.Lista;
 
 public class Main {
     public static void main(final String[] args) {

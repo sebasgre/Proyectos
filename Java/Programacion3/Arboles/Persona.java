@@ -1,4 +1,4 @@
-package Arboles;
+package Java.Programacion3.Arboles;
 
 public class Persona implements Identificable {
     private String ci;

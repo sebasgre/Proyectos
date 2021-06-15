@@ -1,6 +1,6 @@
-package Practico2.ImagenesTransformadas;
+package Java.Programacion3.Practico2.ImagenesTransformadas;
 
-import Practico2.Imagenes.Modelo;
+import Java.Programacion3.Practico2.Imagenes.Modelo;
 
 public abstract class Transformacion {
     protected Modelo modeloBase;

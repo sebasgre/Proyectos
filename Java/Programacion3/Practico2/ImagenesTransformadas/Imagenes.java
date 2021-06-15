@@ -1,4 +1,4 @@
-package Practico2.ImagenesTransformadas;
+package Java.Programacion3.Practico2.ImagenesTransformadas;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -13,7 +13,9 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Practico2.Imagenes.Modelo;
+import Java.Programacion3.Practico2.Imagenes.Modelo;
+
+
 
 public class Imagenes extends Transformacion {
     private BufferedImage imagen1;

@@ -1,4 +1,4 @@
-package prueba.Lista;
+package Java.Programacion3.prueba.Lista;
 
 import java.util.Iterator;
 import java.beans.PropertyChangeListener;

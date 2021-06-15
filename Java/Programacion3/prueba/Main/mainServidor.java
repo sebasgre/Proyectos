@@ -1,6 +1,6 @@
-package prueba.Main;
+package Java.Programacion3.prueba.Main;
 
-import prueba.GUI.ventanaPortada;
+import Java.Programacion3.prueba.GUI.ventanaPortada;
 
 public class mainServidor {
     public static void main(String[] args) {

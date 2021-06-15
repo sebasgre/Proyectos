@@ -1,4 +1,4 @@
-package Practico4.Vista;
+package Java.Programacion3.Practico4.Vista;
 
 import java.awt.*;
 

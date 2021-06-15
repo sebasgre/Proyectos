@@ -1,4 +1,4 @@
-package Practico4.Gui;
+package Java.Programacion3.Practico4.Gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,10 +15,10 @@ import javax.swing.JTextField;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Practico4.Lista.ListaOrdenada;
-import Practico4.Modelo.Persona;
-import Practico4.Vista.DibujarPersona;
-import Practico4.Vista.IDibujo;
+import Java.Programacion3.Practico4.Lista.ListaOrdenada;
+import Java.Programacion3.Practico4.Modelo.Persona;
+import Java.Programacion3.Practico4.Vista.DibujarPersona;
+import Java.Programacion3.Practico4.Vista.IDibujo;
 
 public class FramePrincipal extends JFrame {
     private final ListaOrdenada<Persona> listaPersonas = new ListaOrdenada<>();

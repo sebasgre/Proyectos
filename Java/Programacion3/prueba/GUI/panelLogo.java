@@ -1,4 +1,4 @@
-package prueba.GUI;
+package Java.Programacion3.prueba.GUI;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

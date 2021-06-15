@@ -1,4 +1,4 @@
-package Practico2.Imagenes;
+package Java.Programacion3.Practico2.Imagenes;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

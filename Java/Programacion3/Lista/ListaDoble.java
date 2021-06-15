@@ -1,4 +1,4 @@
-package Lista;
+package Java.Programacion3.Lista;
 
 import java.util.Iterator;
 

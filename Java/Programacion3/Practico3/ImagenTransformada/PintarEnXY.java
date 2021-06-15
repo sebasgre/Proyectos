@@ -1,11 +1,11 @@
-package Practico3.ImagenTransformada;
+package Java.Programacion3.Practico3.ImagenTransformada;
 
 import javax.swing.JOptionPane;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Practico3.Imagenes.Modelo;
+import Java.Programacion3.Practico3.Imagenes.Modelo;
 
 public class PintarEnXY extends Transformacion {
     private int x;

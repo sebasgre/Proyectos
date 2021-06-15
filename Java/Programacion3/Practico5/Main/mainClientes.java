@@ -1,5 +1,5 @@
-package Practico5.Main;
-import Practico5.Red.Cliente;
+package Java.Programacion3.Practico5.Main;
+import Java.Programacion3.Practico5.Red.Cliente;
 
 public class mainClientes {
     public static void main(String[] args) {

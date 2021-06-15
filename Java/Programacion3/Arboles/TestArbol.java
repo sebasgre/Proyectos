@@ -1,4 +1,4 @@
-package Arboles;
+package Java.Programacion3.Arboles;
 
 public class TestArbol {
     public static void main(String[] args) {

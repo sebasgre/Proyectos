@@ -1,12 +1,12 @@
-package Practico3.Red;
+package Java.Programacion3.Practico3.Red;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import Practico3.ImagenTransformada.PintarEnXY;
-import Practico3.Imagenes.Modelo;
+import Java.Programacion3.Practico3.ImagenTransformada.PintarEnXY;
+import Java.Programacion3.Practico3.Imagenes.Modelo;
 
 public class Recibir implements Runnable {
     private Modelo imagen;

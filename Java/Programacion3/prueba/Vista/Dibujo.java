@@ -1,13 +1,15 @@
-package prueba.Vista;
+package Java.Programacion3.prueba.Vista;
 
 import java.awt.Graphics;
 
-import prueba.Lista.Lista;
-import prueba.Modelo.Mensaje;
-import prueba.Red.Enviar;
-
 public class Dibujo implements iDibujo {
-    private Lista<Mensaje> lista;
+
+    @Override
+    public void dibujo(Graphics g) {
+        // TODO Auto-generated method stub
+        
+    }
+    /*private Lista<Mensaje> lista;
     private Enviar conexion;
     private String texto;
     private int distaciaEntreLineas = 15;
@@ -56,6 +58,6 @@ public class Dibujo implements iDibujo {
 
             drawTextos(g, lineas, derechaPosX, posY + 10);
         }
-    }
+    }*/
 
 }

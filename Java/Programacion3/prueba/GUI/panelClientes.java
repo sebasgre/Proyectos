@@ -1,14 +1,14 @@
-package prueba.GUI;
-
-import java.awt.Graphics;
-import javax.swing.JPanel;
-
-import prueba.Red.Enviar;
-import prueba.Vista.iDibujo;
+package Java.Programacion3.prueba.GUI;
 
 import java.awt.Dimension;
+import java.awt.Graphics;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+
+import javax.swing.JPanel;
+
+import Java.Programacion3.prueba.Red.Enviar;
+import Java.Programacion3.prueba.Vista.iDibujo;
 
 public class panelClientes extends JPanel implements PropertyChangeListener {
     private iDibujo dibujo;

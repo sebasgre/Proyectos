@@ -1,4 +1,4 @@
-package Practico1.Modelo;
+package Java.Programacion3.Practico1.Modelo;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

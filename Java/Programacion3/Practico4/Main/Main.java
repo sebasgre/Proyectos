@@ -1,6 +1,6 @@
-package Practico4.Main;
+package Java.Programacion3.Practico4.Main;
 
-import Practico4.Gui.FramePrincipal;
+import Java.Programacion3.Practico4.Gui.FramePrincipal;
 
 public class Main {
     public static void main(String[] args) {

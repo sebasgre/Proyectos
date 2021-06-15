@@ -1,33 +1,9 @@
-package prueba.GUI;
+package Java.Programacion3.prueba.GUI;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.time.LocalDateTime;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import prueba.Lista.Lista;
-import prueba.Modelo.Mensaje;
-import prueba.Red.Enviar;
-import prueba.Red.Recibir;
-import prueba.Vista.Dibujo;
-import prueba.Vista.iDibujo;
 
 public class Ventana extends JFrame {
-    private Lista<Mensaje> lista = new Lista<>();
+    /*private Lista<Mensaje> lista = new Lista<>();
     private iDibujo dibujar = new Dibujo(lista);
     private panelServidor panelServidor = new panelServidor(dibujar);
     private panelClientes panelClientes = new panelClientes(dibujar);
@@ -191,6 +167,6 @@ public class Ventana extends JFrame {
 
     private void añadirObservador() {
         lista.addObserver(conexion);
-    }
+    }*/
 
 }

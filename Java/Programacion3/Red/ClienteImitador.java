@@ -1,4 +1,4 @@
-package Red;
+package Java.Programacion3.Red;
 
 import java.io.BufferedReader;
 import java.io.IOException;

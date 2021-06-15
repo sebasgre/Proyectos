@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestArbolAritmetico",
+            "request": "launch",
+            "mainClass": "Java.Programacion3.Arboles.aritmetico.TestArbolAritmetico",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Practico2.Imagenes.Main",

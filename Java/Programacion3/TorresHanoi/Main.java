@@ -1,4 +1,4 @@
-package TorresHanoi;
+package Java.Programacion3.TorresHanoi;
 
 public class Main {
     public static void main(String[] args) {

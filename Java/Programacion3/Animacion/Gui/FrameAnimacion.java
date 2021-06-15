@@ -1,4 +1,4 @@
-package Animacion.Gui;
+package Java.Programacion3.Animacion.Gui;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -12,9 +12,9 @@ import javax.swing.JMenuItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Animacion.Modelo.Figura;
-import Animacion.Vista.DibujoFigura;
-import Animacion.Vista.IDibujo;
+import Java.Programacion3.Animacion.Modelo.Figura;
+import Java.Programacion3.Animacion.Vista.DibujoFigura;
+import Java.Programacion3.Animacion.Vista.IDibujo;
 
 public class FrameAnimacion extends JFrame {
     private Figura modelo;
