@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Consola",
+            "request": "launch",
+            "mainClass": "Java.SistemasOperativos1.FilosofosComensales.Consola.Consola",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch FrameArbol",
+            "request": "launch",
+            "mainClass": "Java.Programacion3.Arboles.gui.FrameArbol",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArbol",
+            "request": "launch",
+            "mainClass": "Java.Programacion3.Arboles.TestArbol",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch TestArbolAritmetico",
             "request": "launch",
             "mainClass": "Java.Programacion3.Arboles.aritmetico.TestArbolAritmetico",
