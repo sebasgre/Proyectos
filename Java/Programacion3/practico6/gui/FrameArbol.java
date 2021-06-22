@@ -48,6 +48,7 @@ public class FrameArbol extends JFrame {
         try {
             FrameArbol frameArbol = new FrameArbol(modelo);
             frameArbol.setVisible(true);
+            System.out.println("hola");
         } catch (Exception e) {
             e.printStackTrace();
         }
