@@ -1,14 +1,30 @@
-package Java.Programacion3.Arboles.aritmetico;
+package Java.Programacion3.practico6.aritmetico;
 
-import Java.Programacion3.Arboles.Arbol;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
+
+import Java.Programacion3.practico6.Arbol;
 
 public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
+   
+
+    private PropertyChangeSupport observed;
+
     public ArbolAritmetico() {
         super();
     }
 
     public ArbolAritmetico(String expresion) throws Exception {
         raiz = leerExpresion(null, expresion);
+        observed = new PropertyChangeSupport(this);
+    }
+
+    public void addObserver(PropertyChangeListener panel) {
+        observed.addPropertyChangeListener(panel);
+    }
+
+    public void cambioOk() {
+        observed.firePropertyChange("Modelo", 1, 2);
     }
 
     private Contenedor<ElementoAritmetico> leerExpresion(Contenedor<ElementoAritmetico> padre, String expresionSucia)
@@ -151,7 +167,7 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         double resultado = 0;
         for (Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) {
             double evaluarHijo = evaluarContenedor(hijo);
-            resultado = - resultado - evaluarHijo;
+            resultado = -resultado - evaluarHijo;
             System.out.println(resultado);
         }
 
@@ -179,8 +195,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
 
         return resultado;
     }
-
-    
 
     @Override
     public String toString() {

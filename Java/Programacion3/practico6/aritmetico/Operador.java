@@ -1,4 +1,4 @@
-package Java.Programacion3.Arboles.aritmetico;
+package Java.Programacion3.practico6.aritmetico;
 
 public class Operador extends ElementoAritmetico {
 

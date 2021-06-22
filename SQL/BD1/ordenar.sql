@@ -75,3 +75,40 @@ SELECT CONCAT(e.snombre, ' ', e.sappaterno) as empleado,
     CONCAT(e2.snombre, ' ', e2.sappaterno) as supervisor
 FROM empleados e
     JOIN empleados e2 ON e.supervisor_id = e2.ci_id;
+-- Obtener todos los empleados que tienen familiares    
+SELECT e.ci_id,
+    CONCAT(e.snombre, ' ', e.sappaterno) as empleados,
+    e.dtNacimiento,
+    f.snombre as familiares
+FROM empleados e
+    JOIN familiares f ON e.ci_id = f.empleado_id;
+-- Obtener todos los empleados de sistemas que tienen familiares
+SELECT e.ci_id,
+    CONCAT(e.snombre, ' ', e.sappaterno) as empleados,
+    e.dtNacimiento,
+    f.snombre as familiares
+FROM empleados e
+    JOIN familiares f ON e.ci_id = f.empleado_id
+    JOIN departamentos d on e.dpto_id = d.numero_id
+WHERE d.snombre = "Sistemas";
+--Obtener todos los empleados que trabajan en contabilidad y participan en algun proyecto
+SELECT *
+FROM empleados e
+    JOIN departamentos d ON e.dpto_id = d.numero_id
+    JOIN trabajos t ON e.ci_id = t.empleado_id
+    JOIN proyectos p ON p.dpto_id = d.numero_id
+WHERE d.snombre = "contabilidad";
+-- obtener todos los empleados que no tiene familiares
+SELECT *
+FROM empleados e
+    LEFT JOIN familiares f ON e.ci_id = f.empleado_id
+WHERE f.empleado_id IS NULL;
+-- Mostras las horas trabajadas de cada empleado en sus proyectos asignados, la consulta debera mostras tres columnas nombre completo del empleado | nombre del proyecto | horas trabajadas
+SELECT CONCAT(e.snombre, ' ', e.sappaterno) as Empleado, p.snombre as Proyecto, t.ihoras as Horas 
+FROM empleados e
+JOIN trabajos t ON e.ci_id = t.empleado_id
+JOIN proyectos p ON t.proyecto_id = p.numero_id;
+
+select * 
+from empleados
+where dpto_id IS NOT 1;

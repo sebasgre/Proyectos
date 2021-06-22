@@ -12,7 +12,7 @@ public class TestArbol {
         a.addHijo(new Persona("F", "Paco"), "D");
         a.addHijo(new Persona("G", "Paco"), "B");
         a.addHijo(new Persona("H", "Paco"), "B");
-
+        
         System.out.println(a);
     }
 }
