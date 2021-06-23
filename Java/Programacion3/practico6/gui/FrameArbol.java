@@ -40,6 +40,7 @@ public class FrameArbol extends JFrame {
         this.setJMenuBar(bar);
         this.getContentPane().setLayout(new BorderLayout());
         this.getContentPane().add(panel, BorderLayout.CENTER);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.pack();
         this.setLocationRelativeTo(null);
     }
@@ -48,7 +49,6 @@ public class FrameArbol extends JFrame {
         try {
             FrameArbol frameArbol = new FrameArbol(modelo);
             frameArbol.setVisible(true);
-            System.out.println("hola");
         } catch (Exception e) {
             e.printStackTrace();
         }

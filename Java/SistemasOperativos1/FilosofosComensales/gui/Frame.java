@@ -43,8 +43,6 @@ public class Frame extends JFrame {
     private JLabel labTen4;
     private JLabel labTen5;
     private JTextArea tAreaProceso;
-    private int pos = -1;
-    private int post = 0;
 
     public Frame() {
         init1();
