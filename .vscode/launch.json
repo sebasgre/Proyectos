@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "Java.Programacion3.Practico1.Main.Main",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consola",
+            "request": "launch",
+            "mainClass": "SQL.BD1.Proyecto.Consola",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "Java.Programacion3.Practico4.Main.Main",
             "projectName": "Proyectos_f2fa4dc5"
         },

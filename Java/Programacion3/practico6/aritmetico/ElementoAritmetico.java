@@ -1,6 +1,6 @@
 package Java.Programacion3.practico6.aritmetico;
 
-import Java.Programacion3.practico6.Identificable;
+import Java.Programacion3.practico6.gui.Identificable;
 
 public abstract class ElementoAritmetico implements Identificable {
     @Override

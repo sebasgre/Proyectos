@@ -1,14 +1,19 @@
-package Java.Programacion3.practico6.aritmetico;
+package Java.Programacion3.practico6.modelo;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-import Java.Programacion3.practico6.Arbol;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import Java.Programacion3.practico6.Arbol.Arbol;
+import Java.Programacion3.practico6.aritmetico.ElementoAritmetico;
+import Java.Programacion3.practico6.aritmetico.Numero;
+import Java.Programacion3.practico6.aritmetico.Operador;
 
 public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
-   
-
     private PropertyChangeSupport observed;
+    private final static Logger logger = LogManager.getLogger();
 
     public ArbolAritmetico() {
         super();
@@ -24,7 +29,7 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
     }
 
     public void cambioOk() {
-        observed.firePropertyChange("Modelo", 1, 2);
+        observed.firePropertyChange("Cambio", 1, 2);
     }
 
     private Contenedor<ElementoAritmetico> leerExpresion(Contenedor<ElementoAritmetico> padre, String expresionSucia)
@@ -63,7 +68,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
             int numero = Integer.MIN_VALUE;
             try {
                 numero = Integer.parseInt(String.valueOf(caracterActual));
-
                 // posible numero
                 posicionActual++;
                 continue;
@@ -135,18 +139,22 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         Operador operacion = (Operador) elementoAritmetico;
 
         if (operacion.getNombre().equals("Suma")) {
+            logger.debug("aqui se realiza la operacion suma");
             return sumarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Resta")) {
+            logger.debug("aqui se realiza la operacion resta");
             return restarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Multiplica")) {
+            logger.debug("aqui se realiza la operacion multiplicacion");
             return multiplicarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Divide")) {
+            logger.debug("aqui se realiza la operacion division");
             return dividirHijos(nodo);
         }
         return Double.MIN_VALUE;
@@ -157,7 +165,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         for (Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) {
             double evaluarHijo = evaluarContenedor(hijo);
             resultado += evaluarHijo;
-            System.out.println(resultado);
         }
 
         return resultado;
@@ -168,7 +175,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         for (Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) {
             double evaluarHijo = evaluarContenedor(hijo);
             resultado = -resultado - evaluarHijo;
-            System.out.println(resultado);
         }
 
         return resultado;
@@ -179,7 +185,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         for (Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) {
             double evaluarHijo = evaluarContenedor(hijo);
             resultado *= evaluarHijo;
-            System.out.println(resultado);
         }
 
         return resultado;
@@ -190,7 +195,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         for (Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) {
             double evaluarHijo = evaluarContenedor(hijo);
             resultado = (1 / resultado) * (1 / evaluarHijo);
-            System.out.println(resultado);
         }
 
         return resultado;
@@ -201,7 +205,7 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         return toStringAritmetico(raiz) + " = " + String.valueOf(evaluar());
     }
 
-    private String toStringAritmetico(Contenedor<ElementoAritmetico> nodo) {
+    public String toStringAritmetico(Contenedor<ElementoAritmetico> nodo) {
         ElementoAritmetico elementoAritmetico = nodo.getContenido();
         if (elementoAritmetico instanceof Numero) {
             return String.valueOf(((Numero) elementoAritmetico).getValor());
@@ -219,7 +223,6 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
             separador = operacionString;
         }
         resultado.append(")");
-
         return resultado.toString();
     }
 }

@@ -1,10 +1,10 @@
-package Java.Programacion3.practico6;
+package Java.Programacion3.practico6.Arbol;
 
 import Java.Programacion3.Lista.Lista2;
+import Java.Programacion3.practico6.gui.Identificable;
 
 public class Arbol<T extends Identificable> {
     protected Contenedor<T> raiz;
-    private static int alpha = 5;
 
     public Contenedor<T> getRaiz() {
         return raiz;
@@ -27,17 +27,18 @@ public class Arbol<T extends Identificable> {
         hijo.setPadre(contenedorPadre);
     }
 
-    public Contenedor<T> buscar(String id) {
-        if (raiz == null)
+    private Contenedor<T> buscar(String padre) {
+        if (raiz == null) {
             return null;
-
-        return raiz.buscar(id);
+        }
+        return raiz.buscar(padre);
     }
 
     @Override
     public String toString() {
-        if (raiz == null)
+        if (raiz == null) {
             return "VACIO";
+        }
         return raiz.toString();
     }
 
@@ -46,9 +47,11 @@ public class Arbol<T extends Identificable> {
         private T contenido;
         private Lista2<Contenedor<T>> hijos;
         private Contenedor<T> padre;
+        private int posX;
+        private int posY;
 
-        public Contenedor(T o) {
-            contenido = o;
+        public Contenedor(T contenido) {
+            this.contenido = contenido;
             hijos = new Lista2<>();
             padre = null;
         }
@@ -56,7 +59,7 @@ public class Arbol<T extends Identificable> {
         public T getContenido() {
             return contenido;
         }
-        
+
         public void setContenido(T contenido) {
             this.contenido = contenido;
         }
@@ -77,16 +80,31 @@ public class Arbol<T extends Identificable> {
             this.padre = padre;
         }
 
+        public int getPosX() {
+            return posX;
+        }
+
+        public void setPosX(int posX) {
+            this.posX = posX;
+        }
+
+        public int getPosY() {
+            return posY;
+        }
+
+        public void setPosY(int posY) {
+            this.posY = posY;
+        }
+
         public Contenedor<T> buscar(String id) {
             if (contenido.getId().equals(id))
                 return this;
-
             for (Contenedor<T> hijo : hijos) {
                 Contenedor<T> posible = hijo.buscar(id);
-                if (posible != null)
+                if (posible != null) {
                     return posible;
+                }
             }
-
             return null;
         }
 
@@ -103,7 +121,6 @@ public class Arbol<T extends Identificable> {
                 }
                 respuesta.append(")");
             }
-
             return respuesta.toString();
         }
     }

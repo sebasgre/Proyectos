@@ -104,11 +104,59 @@ FROM empleados e
     LEFT JOIN familiares f ON e.ci_id = f.empleado_id
 WHERE f.empleado_id IS NULL;
 -- Mostras las horas trabajadas de cada empleado en sus proyectos asignados, la consulta debera mostras tres columnas nombre completo del empleado | nombre del proyecto | horas trabajadas
-SELECT CONCAT(e.snombre, ' ', e.sappaterno) as Empleado, p.snombre as Proyecto, t.ihoras as Horas 
+SELECT CONCAT(e.snombre, ' ', e.sappaterno) as Empleado,
+    p.snombre as Proyecto,
+    t.ihoras as Horas
 FROM empleados e
-JOIN trabajos t ON e.ci_id = t.empleado_id
-JOIN proyectos p ON t.proyecto_id = p.numero_id;
-
-select * 
+    JOIN trabajos t ON e.ci_id = t.empleado_id
+    JOIN proyectos p ON t.proyecto_id = p.numero_id;
+-- NOT IN
+SELECT *
+FROM empleados
+WHERE snombre NOT IN ('Pedro', 'David', 'Luis', 'Alberto');
+SELECT *
+FROM empleados
+WHERE ci_id NOT IN (
+        SELECT empleado_id
+        FROM familiares f
+    );
+SELECT CONCAT(e.snombre, ' ', e.sappaterno) as Empleado,
+    u.subicacion
+FROM empleados e
+    JOIN dpto_ubicaciones u ON e.dpto_id = u.dpto_id
+WHERE u.subicacion = "La Paz";
+SELECT *
+FROM empleados
+WHERE ci_id NOT IN (
+        SELECT empleado_id
+        FROM trabajos t
+    );
+select dpto_id,
+    count(*)
 from empleados
-where dpto_id IS NOT 1;
+group by dpto_id;
+SELECT e.dpto_id,
+    d.snombre,
+    count(*)
+FROM empleados e
+    JOIN departamentos d on e.dpto_id = d.numero_id
+GROUP BY d.snombre;
+select concat (e.snombre, ' ', e.sappaterno) as empleado,
+    count(*)
+from empleados e
+    join trabajos t on e.ci_id = t.empleado_id
+GROUP BY e.ci_id
+order by 2 DESC;
+
+SELECT d.snombre,
+    sum(e.nsalario)
+FROM departamentos d
+    JOIN empleados e on e.dpto_id = d.numero_id
+GROUP BY d.snombre
+ORDER BY 2 desc;
+
+select 'familiares' sum(numero_id)
+
+union
+select 'sin familiares'
+
