@@ -47,7 +47,6 @@ public class FrameArbol extends JFrame {
         this.getContentPane().add(scroller, BorderLayout.CENTER);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        // this.pack();
     }
 
     public static void main(String[] args) {
