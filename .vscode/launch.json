@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Main",
             "request": "launch",
+            "mainClass": "Java.Programacion3.Practico2.Imagenes.Main",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
             "mainClass": "Java.Programacion3.Practico1.Main.Main",
             "projectName": "Proyectos_f2fa4dc5"
         },
