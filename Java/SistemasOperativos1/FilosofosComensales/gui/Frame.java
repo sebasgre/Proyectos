@@ -208,14 +208,14 @@ public class Frame extends JFrame {
         vector[i] = (int) (Math.random() * 5);
         for (i = 1; i < 5; i++) {
             vector[i] = (int) (Math.random() * 5);
-            for (int j = 0; j < i; j++){
-                if(vector[i] == vector[j]){
+            for (int j = 0; j < i; j++) {
+                if (vector[i] == vector[j]) {
                     i--;
                 }
             }
         }
 
-        for (int k = 0; k < 5; k++){
+        for (int k = 0; k < 5; k++) {
             izq = vector[k] - 1;
 
             if (izq < 0) {
@@ -223,43 +223,10 @@ public class Frame extends JFrame {
             }
             der = vector[k];
             System.out.println(vector[k]);
-            com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], resultado[vector[k]], tAreaProceso);
+            com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], resultado[vector[k]],
+                    tAreaProceso);
         }
-        
-        /*int[] vector = new int[5]; // 0 1 2 3 4 5
-        for (j = 0; j < 10; j++) {
-            for (i = 0; i < 5; i++) {
-                /*
-                 * izq = i - 1;
-                 * 
-                 * if (izq < 0) { izq = 4; } der = i; System.out.println(i);
-                 * 
-                 * com = new Filosofo(i, tenedor[izq], tenedor[der], filosofo[i], resultado[i],
-                 * tAreaProceso);
-                 
-                izq = (int) (Math.random() * 5);
-                der = izq - 1;
-                if (der == -1)
-                    der = 4;
-                System.out.println("Izquierda " + izq);
-                System.out.println("Derecha " + der);
-                pos = izq;
-                post = pos;
-                System.out.println(vector[izq] + " " + izq);
-                if (vector[izq] > 2) {
-                    com = new Filosofo(izq, tenedor[izq], tenedor[izq], filosofo[izq], resultado[izq], tAreaProceso);
-                    vector[izq] = 0;
-                } else {
-                    vector[izq] = vector[izq] + 1;
-                    System.out.println(vector[izq]);
-                }
-                // mostrale codigo
-                // ejecuta, sale error
-            }
-        }*/
-
     }
-
 
     public void init1() {
         panel1 = new Panel1();
@@ -299,56 +266,3 @@ public class Frame extends JFrame {
         });
     }
 }
-/*
-public void iniciar() {
-        JButton filosofo[];
-        filosofo = new JButton[5];
-        filosofo[0] = estadoFilosofo1;
-        filosofo[1] = estadoFilosofo2;
-        filosofo[2] = estadoFilosofo3;
-        filosofo[3] = estadoFilosofo4;
-        filosofo[4] = estadoFilosofo5;
-
-        Filosofo com;
-
-        JLabel tenedor[];
-        tenedor = new JLabel[5];
-        tenedor[0] = labTen1;
-        tenedor[1] = labTen2;
-        tenedor[2] = labTen3;
-        tenedor[3] = labTen4;
-        tenedor[4] = labTen5;
-
-        JLabel resultado[];
-        resultado = new JLabel[5];
-        resultado[0] = labCom1;
-        resultado[1] = labCom2;
-        resultado[2] = labCom3;
-        resultado[3] = labCom4;
-        resultado[4] = labCom5;
-
-        int i = 0, izq, der = 0;
-
-        int vector[] = new int[5];
-        vector[i] = (int) (Math.random() * 5);
-        for (i = 1; i < 5; i++) {
-            vector[i] = (int) (Math.random() * 5);
-            for (int j = 0; j < i; j++){
-                if(vector[i] == vector[j]){
-                    i--;
-                }
-            }
-        }
-
-        for (int k = 0; k < 5; k++){
-            izq = vector[k] - 1;
-
-            if (izq < 0) {
-                izq = 4;
-            }
-            der = vector[k];
-            System.out.println(vector[k]);
-            com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], resultado[vector[k]], tAreaProceso);
-        }
-    }
- */

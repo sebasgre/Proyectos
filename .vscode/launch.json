@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ventana",
+            "request": "launch",
+            "mainClass": "SQL.BD1.Proyecto.gui.Ventana",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Java.Programacion3.Practico2.Imagenes.Main",
