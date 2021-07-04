@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
 public class Filosofo implements Runnable {
+    private int cantidadDeComidas = 5;
     private int id, res;
     private Thread t;
     private JButton filosofo;
@@ -15,12 +16,15 @@ public class Filosofo implements Runnable {
     private JLabel resultado;
     private String proceso;
     private JTextArea textArea;
+    private JLabel porcentaje;
 
-    public Filosofo(int id, JLabel izquierdo, JLabel derecho, JButton filosofo, JLabel resultado, JTextArea textArea) {
+    public Filosofo(int id, JLabel izquierdo, JLabel derecho, JButton filosofo, JLabel porcentaje, JLabel resultado,
+            JTextArea textArea) {
         this.id = id;
         this.derecho = derecho;
         this.izquierdo = izquierdo;
         this.filosofo = filosofo;
+        this.porcentaje = porcentaje;
         this.resultado = resultado;
         this.textArea = textArea;
         this.filosofo.setBackground(Color.white);
@@ -30,7 +34,7 @@ public class Filosofo implements Runnable {
     }
 
     public void run() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < cantidadDeComidas; i++) {
             synchronized (this.izquierdo) {
                 synchronized (this.derecho) {
                     comer();
@@ -61,6 +65,7 @@ public class Filosofo implements Runnable {
         } catch (InterruptedException e) {
         }
 
+        porcentaje.setText(String.valueOf((res * 100) / cantidadDeComidas) + "%");
         derecho.setText("Libre");
         derecho.setForeground(Color.black);
 
@@ -71,6 +76,10 @@ public class Filosofo implements Runnable {
         filosofo.setBackground(Color.white);
         proceso = "Fil.= " + (id + 1) + " Deja de comer y queda pensando, libera sus tenedores\n";
         textArea.append(proceso);
+        if(res == cantidadDeComidas){
+            filosofo.setText("FELIZ");
+            filosofo.setBackground(Color.yellow);
+        }
     }
 
     void pensar() {

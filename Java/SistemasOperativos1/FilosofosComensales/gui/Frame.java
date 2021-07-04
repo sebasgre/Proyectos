@@ -1,6 +1,7 @@
 package Java.SistemasOperativos1.FilosofosComensales.gui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,7 +14,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import Java.SistemasOperativos1.FilosofosComensales.Modelo.Filosofo;
 
 public class Frame extends JFrame {
@@ -26,23 +28,34 @@ public class Frame extends JFrame {
     private JButton estadoFilosofo3;
     private JButton estadoFilosofo4;
     private JButton estadoFilosofo5;
+
+    private JLabel porcentaje1;
+    private JLabel porcentaje2;
+    private JLabel porcentaje3;
+    private JLabel porcentaje4;
+    private JLabel porcentaje5;
+
     private JLabel filosofo1;
     private JLabel filosofo2;
     private JLabel filosofo3;
     private JLabel filosofo4;
     private JLabel filosofo5;
+
     private JScrollPane jScrollPane1;
+
     private JLabel labCom1;
     private JLabel labCom2;
     private JLabel labCom3;
     private JLabel labCom4;
     private JLabel labCom5;
+    
     private JLabel labTen1;
     private JLabel labTen2;
     private JLabel labTen3;
     private JLabel labTen4;
     private JLabel labTen5;
     private JTextArea tAreaProceso;
+    private final static Logger logger = LogManager.getLogger();
 
     public Frame() {
         init1();
@@ -56,6 +69,11 @@ public class Frame extends JFrame {
         estadoFilosofo3 = new JButton();
         estadoFilosofo4 = new JButton();
         estadoFilosofo5 = new JButton();
+        porcentaje1 = new JLabel();
+        porcentaje2 = new JLabel();
+        porcentaje3 = new JLabel();
+        porcentaje4 = new JLabel();
+        porcentaje5 = new JLabel();
         labTen1 = new JLabel();
         labTen2 = new JLabel();
         labTen3 = new JLabel();
@@ -113,23 +131,38 @@ public class Frame extends JFrame {
 
         estadoFilosofo1.setText("Filosofo1");
         estadoFilosofo1.setBounds(190, 50, 100, 20);
+        porcentaje1.setText("0%");
+        porcentaje1.setBounds(190, 30, 100, 20);
         panel2.add(estadoFilosofo1);
+        panel2.add(porcentaje1);
 
         estadoFilosofo2.setText("Filosofo2");
         estadoFilosofo2.setBounds(370, 160, 100, 20);
+        porcentaje2.setText("0%");
+        porcentaje2.setBounds(370, 140, 100, 20);
         panel2.add(estadoFilosofo2);
+        panel2.add(porcentaje2);
 
         estadoFilosofo3.setText("Filosofo3");
         estadoFilosofo3.setBounds(270, 330, 100, 20);
+        porcentaje3.setText("0%");
+        porcentaje3.setBounds(270, 310, 100, 20);
         panel2.add(estadoFilosofo3);
+        panel2.add(porcentaje3);
 
         estadoFilosofo4.setText("Filosofo4");
         estadoFilosofo4.setBounds(70, 330, 100, 20);
+        porcentaje4.setText("0%");
+        porcentaje4.setBounds(60, 310, 100, 20);
         panel2.add(estadoFilosofo4);
+        panel2.add(porcentaje4);
 
         estadoFilosofo5.setText("Filosofo5");
         estadoFilosofo5.setBounds(10, 160, 100, 20);
+        porcentaje5.setText("0%");
+        porcentaje5.setBounds(90, 140, 100, 20);
         panel2.add(estadoFilosofo5);
+        panel2.add(porcentaje5);
 
         int x = 500;
         int y = 30;
@@ -184,6 +217,14 @@ public class Frame extends JFrame {
         filosofo[3] = estadoFilosofo4;
         filosofo[4] = estadoFilosofo5;
 
+        JLabel porcentaje[];
+        porcentaje = new JLabel[5];
+        porcentaje[0] = porcentaje1;
+        porcentaje[1] = porcentaje2;
+        porcentaje[2] = porcentaje3;
+        porcentaje[3] = porcentaje4;
+        porcentaje[4] = porcentaje5;
+
         Filosofo com;
 
         JLabel tenedor[];
@@ -222,9 +263,9 @@ public class Frame extends JFrame {
                 izq = 4;
             }
             der = vector[k];
-            System.out.println(vector[k]);
-            com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], resultado[vector[k]],
-                    tAreaProceso);
+            logger.info("Filosofo random ingresado " + vector[k]);
+            com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], porcentaje[vector[k]],
+                    resultado[vector[k]], tAreaProceso);
         }
     }
 
@@ -248,11 +289,12 @@ public class Frame extends JFrame {
 
     public void cargarBoton() {
         boton = new JButton();
-        boton.setBounds(260, 325, 80, 30);
+        boton.setBounds(540, 340, 60, 60);
         ImageIcon image1 = new ImageIcon(
                 getClass().getClassLoader().getResource("Java/SistemasOperativos1/Imagenes/flecha.png"));
         boton.setFocusPainted(false);
         boton.setBorder(null);
+        boton.setBackground(Color.white);
         boton.setIcon(new ImageIcon(
                 image1.getImage().getScaledInstance(boton.getWidth(), boton.getHeight(), image1.getImageLoadStatus())));
         boton.setOpaque(true);

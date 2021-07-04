@@ -7,11 +7,6 @@ public class Consola {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Frame().setVisible(true);
-
-                /*for (int i = 0; i < 20; i++) {
-                    System.out.print((int) (Math.random() * 5) + " ");
-                }*/
-
             }
         });
     }

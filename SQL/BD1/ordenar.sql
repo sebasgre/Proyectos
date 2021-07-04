@@ -160,3 +160,11 @@ select 'familiares' sum(numero_id)
 union
 select 'sin familiares'
 
+
+-- Obtener todos los empleados que trabajan en mas de 1 proyecto  (de 2 en adelante)
+select e.ci_id, Concat (e.snombre , ' ' , e.sappaterno) as nombre_completo,  count(t.proyecto_id)
+from empleados e
+join trabajos t on t.empleado_id = e.ci_id
+GROUP by e.ci_id;
+
+
