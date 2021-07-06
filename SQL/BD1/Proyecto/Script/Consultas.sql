@@ -13,11 +13,11 @@ join tipoRegistro t on t.partidos_id = p.numPartido
 
 
 --2 jugador que recibio mas tarjetas sin importar roja o amarilla solo el jugador que recibio mas tarjetas
-select j.nombre as nombre, count(j.dni) as tarjetas
+select j.nombre as nombre, count(t.tipoTarjeta) as tarjetas
 from jugadores j
 join tipoRegistro t on j.dni = t.jugadores_id
-group by j.dni;
-
+group by j.dni
+order by tarjetas desc LIMIT 2;
 --3 todos los equipos que no llegaron a cuartos de final nunca
 select e.nombre as equipos 
 from equipos e
