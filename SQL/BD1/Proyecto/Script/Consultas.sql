@@ -1,25 +1,35 @@
 USE proyecto;
 --1 resultado de cada partido de como finalizo
--- partido, equipo local, equipido visitante nombre resultado del partido termino 2-0/5-0
--- nombre equipo local, visitante, resultado partido
-select p.numPartido, l.nombre as EquipoLocal, v.nombre as EquipoVisitante, sum(jL.numGoles) as golesLocal, sum(jV.numGoles) as golesVisitante
+-- partido equipo local equipido visitante nombre resultado del partido termino 2-0/5-0
+-- nombre equipo local visitante resultado partido
+SELECT  p.numPartido
+       ,l.nombre         AS EquipoLocal
+       ,v.nombre         AS EquipoVisitante
+       ,SUM(jL.numGoles) AS golesLocal
+       ,SUM(jV.numGoles) AS golesVisitante
 FROM partidos p
-join jugadores jL on jL.equipos_id = p.numPartido
-join jugadores jV on jV.equipos_id = p.numPartido
-join equipos e on e.codigo = p.equiposLocales_id
-join equipos e on e.codigo = p.equiposVisitantes_id
-join tipoRegistro t on t.partidos_id = p.numPartido
-
-
-
+JOIN jugadores jL
+ON jL.equipos_id = p.numPartido
+JOIN jugadores jV
+ON jV.equipos_id = p.numPartido
+JOIN equipos e
+ON e.codigo = p.equiposLocales_id
+JOIN equipos e
+ON e.codigo = p.equiposVisitantes_id
+JOIN tipoRegistro t
+ON t.partidos_id = p.numPartido
 --2 jugador que recibio mas tarjetas sin importar roja o amarilla solo el jugador que recibio mas tarjetas
-select j.nombre as nombre, count(t.tipoTarjeta) as tarjetas
-from jugadores j
-join tipoRegistro t on j.dni = t.jugadores_id
-group by j.dni
-order by tarjetas desc LIMIT 2;
+SELECT  j.nombre             AS nombre
+       ,COUNT(t.tipoTarjeta) AS tarjetas
+FROM jugadores j
+JOIN tipoRegistro t
+ON j.dni = t.jugadores_id
+GROUP BY  j.dni
+ORDER BY tarjetas desc
+LIMIT 2;
 --3 todos los equipos que no llegaron a cuartos de final nunca
-select e.nombre as equipos 
-from equipos e
-join clasifican c on e.codigo = c.equipos_id
-where c.etapas_id < 2;
+SELECT  e.nombre AS equipos
+FROM equipos e
+JOIN clasifican c
+ON e.codigo = c.equipos_id
+WHERE c.etapas_id < 2;  

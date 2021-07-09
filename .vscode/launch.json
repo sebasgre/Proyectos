@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Hola",
+            "request": "launch",
+            "mainClass": "Java.SistemasOperativos1.FilosofosComensales.Consola.Hola",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch Ventana",
             "request": "launch",
             "mainClass": "SQL.BD1.Proyecto.gui.Ventana",
