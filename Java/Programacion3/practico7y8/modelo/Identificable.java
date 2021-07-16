@@ -1,4 +1,4 @@
-package Java.Programacion3.practico7.gui;
+package Java.Programacion3.practico7y8.modelo;
 
 public interface Identificable {
     public String getId();

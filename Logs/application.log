@@ -1,7 +1,39 @@
-2021-07-09 16:26:37 DEBUG Aqui se dibuja cada nodo
-2021-07-09 16:26:39 DEBUG Aqui se muestra el posicionamiento del nodo 214 | 200
-2021-07-09 16:26:40 DEBUG Aqui mostramos la operacion realizada
-2021-07-09 16:26:41 DEBUG Aqui se muestra el posicionamiento del nodo 120 | 32
-2021-07-09 16:26:41 DEBUG aqui se realiza la operacion resta
-2021-07-09 16:26:41 DEBUG aqui se realiza la operacion multiplicacion
-2021-07-09 16:26:42 DEBUG Aqui mostramos la operacion realizada
+2021-07-15 20:12:35 INFO  No pudo conectarse al servidor
+2021-07-15 20:12:35 DEBUG No pudo ejecutar consulta
+2021-07-15 20:13:08 DEBUG No pudo ejecutar consulta
+2021-07-15 20:17:22 DEBUG No pudo ejecutar consulta
+2021-07-15 20:22:53 INFO  Contenedor en X: 640 - 680
+2021-07-15 20:22:53 INFO  Contenedor en Y: 10 - 50
+2021-07-15 20:22:53 INFO  Mous X: 657 Y: 36
+2021-07-15 20:22:53 INFO  Contenido del contenedor: -
+2021-07-15 20:22:53 INFO  (1.0-(5.0+6.0)) = -10.0
+2021-07-15 21:31:18 INFO  Contenedor en X: 640 - 680
+2021-07-15 21:31:18 INFO  Contenedor en Y: 170 - 210
+2021-07-15 21:31:18 INFO  Mous X: 656 Y: 203
+2021-07-15 21:31:18 INFO  Contenido del contenedor: 4.0
+2021-07-15 21:31:18 INFO  4.0 = 4.0
+2021-07-15 21:31:21 INFO  Contenedor en X: 685 - 725
+2021-07-15 21:31:21 INFO  Contenedor en Y: 90 - 130
+2021-07-15 21:31:21 INFO  Mous X: 712 Y: 100
+2021-07-15 21:31:21 INFO  Contenido del contenedor: +
+2021-07-15 21:31:21 INFO  (4.0+10.0) = 14.0
+2021-07-15 21:31:23 INFO  Contenedor en X: 640 - 680
+2021-07-15 21:31:23 INFO  Contenedor en Y: 10 - 50
+2021-07-15 21:31:23 INFO  Mous X: 660 Y: 31
+2021-07-15 21:31:23 INFO  Contenido del contenedor: /
+2021-07-15 21:31:23 INFO  (45.0/(4.0+10.0)) = 3.2142857142857144
+2021-07-15 22:26:27 INFO  Contenedor en X: 595 - 635
+2021-07-15 22:26:27 INFO  Contenedor en Y: 10 - 50
+2021-07-15 22:26:27 INFO  Mous X: 628 Y: 24
+2021-07-15 22:26:27 INFO  Contenido del contenedor: +
+2021-07-15 22:26:27 INFO  (75.0+85.0) = 160.0
+2021-07-15 22:26:29 INFO  Contenedor en X: 550 - 590
+2021-07-15 22:26:29 INFO  Contenedor en Y: 90 - 130
+2021-07-15 22:26:29 INFO  Mous X: 572 Y: 128
+2021-07-15 22:26:29 INFO  Contenido del contenedor: 75.0
+2021-07-15 22:26:29 INFO  75.0 = 75.0
+2021-07-15 22:26:31 INFO  Contenedor en X: 640 - 680
+2021-07-15 22:26:31 INFO  Contenedor en Y: 90 - 130
+2021-07-15 22:26:31 INFO  Mous X: 672 Y: 112
+2021-07-15 22:26:31 INFO  Contenido del contenedor: 85.0
+2021-07-15 22:26:31 INFO  85.0 = 85.0

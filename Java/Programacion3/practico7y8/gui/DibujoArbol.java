@@ -1,23 +1,20 @@
-package Java.Programacion3.practico7.view;
+package Java.Programacion3.practico7y8.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import Java.Programacion3.Animacion.Vista.IDibujo;
-import Java.Programacion3.practico7.Arbol.Arbol;
-import Java.Programacion3.practico7.aritmetico.ElementoAritmetico;
-import Java.Programacion3.practico7.aritmetico.Numero;
-import Java.Programacion3.practico7.aritmetico.Operador;
-import Java.Programacion3.practico7.modelo.ArbolAritmetico;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import Java.Programacion3.practico7y8.modelo.Arbol;
+import Java.Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Java.Programacion3.practico7y8.modelo.ElementoAritmetico;
+import Java.Programacion3.practico7y8.modelo.Numero;
+import Java.Programacion3.practico7y8.modelo.Operador;
 
 public class DibujoArbol implements IDibujo {
 
     public static final int ANCHO_CONTENEDOR = 40;
     public static final int ESPACIO_VERTICAL = 80;
     public static final int ESPACIO_HORIZONTAL = 50;
-    private final static Logger logger = LogManager.getLogger();
+
     private ArbolAritmetico modelo;
 
     public DibujoArbol(ArbolAritmetico obj) {
@@ -27,8 +24,9 @@ public class DibujoArbol implements IDibujo {
     @Override
     public void dibujar(Graphics g) {
         Arbol.Contenedor<ElementoAritmetico> raiz = modelo.getRaiz();
-        dibujarContenedor(raiz, 10, 10, g);
-        logger.debug("Aqui se dibuja cada nodo");
+        if(raiz == null)
+            return;
+        dibujarContenedor(raiz, 550, 10, g);
     }
 
     public void dibujarContenedor(Arbol.Contenedor<ElementoAritmetico> contenedor, int x, int y, Graphics g) {
@@ -37,36 +35,36 @@ public class DibujoArbol implements IDibujo {
         int yh = y + ESPACIO_VERTICAL;
         int anchoHijo = 0;
 
-        for (Arbol.Contenedor<ElementoAritmetico> hijo : contenedor.getHijos()) {
+        for (Arbol.Contenedor<ElementoAritmetico> hijo : contenedor.getHijos()){
             anchoHijo = getAncho(hijo);
 
             // lineas
-            g.setColor(Color.WHITE);
-            g.drawLine(x + (ancho / 2), y + ANCHO_CONTENEDOR / 2, xh + anchoHijo / 2, yh + ANCHO_CONTENEDOR);
+            g.drawLine(x + (ancho / 2),y + ANCHO_CONTENEDOR / 2,xh + anchoHijo / 2, yh + ANCHO_CONTENEDOR);
 
             dibujarContenedor(hijo, xh, yh, g);
             xh += (anchoHijo + ESPACIO_HORIZONTAL);
         }
 
-        g.setColor(Color.ORANGE);
+
+        g.setColor(Color.WHITE);
         g.fillArc(x + (ancho / 2) - (ANCHO_CONTENEDOR / 2), y, ANCHO_CONTENEDOR, ANCHO_CONTENEDOR, 0, 360);
-        g.setColor(Color.RED);
+        g.setColor(Color.BLACK);
         g.drawArc(x + (ancho / 2) - (ANCHO_CONTENEDOR / 2), y, ANCHO_CONTENEDOR, ANCHO_CONTENEDOR, 0, 360);
 
         contenedor.setPosX(x + (ancho / 2) - (ANCHO_CONTENEDOR / 2));
         contenedor.setPosY(y);
+        contenedor.setAnchoContenedor(ANCHO_CONTENEDOR);
 
         ElementoAritmetico elementoAritmetico = contenedor.getContenido();
-        g.setColor(Color.BLACK);
-        if (elementoAritmetico instanceof Numero) {
-            g.drawString(String.valueOf(((Numero) elementoAritmetico).getValor()), x + (ancho / 2) - 5,
-                    y + (ANCHO_CONTENEDOR / 2) + 4);
+        if(elementoAritmetico instanceof Numero){
+            g.drawString(String.valueOf(((Numero) elementoAritmetico).getValor()), x + (ancho / 2) - 4, y + (ANCHO_CONTENEDOR / 2)+5);
         } else {
             Operador operacion = (Operador) elementoAritmetico;
             String operacionString = operacion.getSimbolo();
-            g.drawString(operacionString, x + (ancho / 2) - 5, y + (ANCHO_CONTENEDOR / 2) + 4);
+            g.drawString(operacionString, x + (ancho / 2) - 4, y + (ANCHO_CONTENEDOR / 2) + 5);
         }
     }
+
 
     private int getAncho(Arbol.Contenedor<ElementoAritmetico> contenedor) {
         if (contenedor.getHijos().tamano() == 0)
