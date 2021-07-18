@@ -29,7 +29,7 @@ public class ControladorNuevaExpresion implements ActionListener {
             Object[] message = {"Expresion: ", expresion};
             int option = JOptionPane.showConfirmDialog(null, message, "Nueva Expresion", JOptionPane.OK_CANCEL_OPTION);
             if (option == JOptionPane.OK_OPTION) {
-                if (expresion.getText().equals("") || !expresion.getText().matches("[a-zA-Z]")) {
+                if (expresion.getText().equals("") && !expresion.getText().matches("[a-zA-Z]")) {
                     String mensaje = expresion.getText().equals("") ? "Ingrese una expresion" : "Ingrese una expresion solo numeros";
                     JOptionPane.showMessageDialog(null, mensaje);
                     return;
