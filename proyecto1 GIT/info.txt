@@ -2,3 +2,4 @@ Hola amigos aqui estare realizando cambios en el repositorio.
 Algo ocurrio aqui, veremos que pasa. Espera hay algo nuevo aqui, intentare probar de nuevo.
 Ok algo cambio aqui veamos que paso...
 Creo que ya voy entendiendo de como funciona esto.
+Ok hacemos otro cambio para seguir probando nuevas funciones y acostubrarnos a usar el git checkout.
