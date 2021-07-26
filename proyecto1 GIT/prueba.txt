@@ -1,2 +1,2 @@
 Probemos nuevos comandos.
-Aqui vienen cosas nuevas!!
+Lo acabo de modificar con el comando git checkout
