@@ -1,3 +1,4 @@
 Probemos nuevos comandos.
 Lo acabo de modificar con el comando git checkout
 Ok señores hay un cambio y lo estamos haciendo con git branch.
+Ahora si creamos a nuestro branch llamado cabecera.
