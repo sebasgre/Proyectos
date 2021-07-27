@@ -5,3 +5,4 @@ Creo que ya voy entendiendo de como funciona esto.
 Ok hacemos otro cambio para seguir probando nuevas funciones y acostubrarnos a usar el git checkout.
 Un cambio mas yo creo que es necesario para probar.
 Yo creo que ya vamos entendiendo de como funciona esto. :)
+Al parecer le molesta algo...
