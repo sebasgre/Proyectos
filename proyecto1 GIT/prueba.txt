@@ -5,3 +5,11 @@ Ahora si creamos a nuestro branch llamado cabecera.
 Vamos a practicar con el comando git merge.
 Quizas aqui uno que otro cambio venga bien.
 Son cosas diferentes las que se vienen!
+
+Aqui viene un cuento divertido disfruten!
+
+Hace mucho mucho tiempo, un niño paseaba por un prado en cuyo centro encontró un árbol con un cartel que decía: soy un árbol encantado, si dices las palabras mágicas, lo verás.
+
+El niño trató de acertar el hechizo, y probó con abracadabra, supercalifragilisticoespialidoso, tan-ta-ta-chán, y muchas otras, pero nada. Rendido, se tiró suplicante, diciendo: "¡¡por favor, arbolito!!", y entonces, se abrió una gran puerta en el árbol. Todo estaba oscuro, menos un cartel que decía: "sigue haciendo magia". Entonces el niño dijo "¡¡Gracias, arbolito!!", y se encendió dentro del árbol una luz que alumbraba un camino hacia una gran montaña de juguetes y chocolate.
+
+El niño pudo llevar a todos sus amigos a aquel árbol y tener la mejor fiesta del mundo, y por eso se dice siempre que "por favor" y "gracias", son las palabras mágicas
