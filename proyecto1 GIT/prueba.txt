@@ -4,3 +4,4 @@ Ok señores hay un cambio y lo estamos haciendo con git branch.
 Ahora si creamos a nuestro branch llamado cabecera.
 Vamos a practicar con el comando git merge.
 Quizas aqui uno que otro cambio venga bien.
+Son cosas diferentes las que se vienen!
