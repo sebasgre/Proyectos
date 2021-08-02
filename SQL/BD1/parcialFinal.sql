@@ -148,16 +148,16 @@ where pa.codigo_id is null and d.codigo_id is null;
 
 select p.*
 from Pacientes p
-join Consultas c on c.paciente_id = p.codigo_id
-where c.paciente_id is null;
+join Consultas c on c.codigo_id = p.codigo_id
+where c.codigo_id is null;
 
 -- 7
 
-select 
-from Pacientes pa
-join Personas p on p.codigo_id = pa.codigo_id
-join Doctores d on d.codigo_id = p.codigo_id;
-
+select p.snombre as nombre, COUNT(*) as Total_De_Pacientes
+from Doctores d
+join Personas p on p.codigo_id = d.codigo_id
+join Consultas c on c.paciente_id = p.codigo_id 
+group by c.paciente_id;
 
 -- 8
 
