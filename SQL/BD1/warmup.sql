@@ -1,0 +1,402 @@
+CREATE DATABASE warmup;
+USE warmup;
+CREATE TABLE DEMO_STUDENT (
+  SID VARCHAR(5) NOT NULL,
+  NAME VARCHAR(50) NOT NULL,
+  MAJOR VARCHAR(30),
+  YEAR INTEGER,
+  GPA DECIMAL(5, 2),
+  CONSTRAINT STU_PK PRIMARY KEY (SID)
+);
+CREATE TABLE DEMO_INSTRUCTOR (
+  IID VARCHAR(5) NOT NULL,
+  NAME VARCHAR(50) NOT NULL,
+  DEPT VARCHAR(30),
+  CONSTRAINT INST_PK PRIMARY KEY (IID)
+);
+CREATE TABLE DEMO_CLASSROOM (
+  CRID VARCHAR(10) NOT NULL,
+  DESCR VARCHAR(50) NOT NULL,
+  CAP INTEGER,
+  CONSTRAINT CLSR_PK PRIMARY KEY (CRID)
+);
+CREATE TABLE DEMO_COURSE (
+  CID VARCHAR(5) NOT NULL,
+  TITLE VARCHAR(50),
+  IID VARCHAR(5) NOT NULL,
+  HOUR INTEGER,
+  CRID VARCHAR(30),
+  CONSTRAINT COURSE_PK PRIMARY KEY (CID),
+  CONSTRAINT COUR_FKDISP1 FOREIGN KEY (IID) REFERENCES DEMO_INSTRUCTOR(IID),
+  CONSTRAINT COUR_FK2 FOREIGN KEY (CRID) REFERENCES DEMO_CLASSROOM(CRID)
+);
+CREATE TABLE DEMO_REGISTRATION (
+  RID VARCHAR(5) NOT NULL,
+  SID VARCHAR(5) NOT NULL,
+  CID VARCHAR(5) NOT NULL,
+  CONSTRAINT REG_PK PRIMARY KEY (RID),
+  CONSTRAINT REG_FK1 FOREIGN KEY (SID) REFERENCES DEMO_STUDENT(SID),
+  CONSTRAINT REG_FK2 FOREIGN KEY (CID) REFERENCES DEMO_COURSE(CID)
+);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S01', 'Bird', 'Philosophy', 2, 3.5);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S02', 'Austin', 'English', 2, 3.7);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S03', 'Scott', 'Statistics', 3, 2.5);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S04', 'Coleman', 'Business', 1, 1.4);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S05', 'Jefferson', NULL, 2, 1.8);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S06', 'Newsome', 'Business', 1, 2.9);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S07', 'Hampton', 'Computer', 2, 2.4);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S08', 'Hartman', 'Business', 1, 3.2);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S09', 'Jones', 'Computer', 4, 3.9);
+INSERT INTO
+  DEMO_STUDENT
+VALUES
+  ('S10', 'Oldham', 'Business', 1, 3.0);
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I01', 'Becker', 'BCIS');
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I02', 'Lee', 'Computer');
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I03', 'Ferguson', 'English');
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I04', 'Harvey', 'Statisitics');
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I05', 'Koh', 'BCIS');
+INSERT INTO
+  DEMO_INSTRUCTOR
+VALUES
+  ('I06', 'Kent', 'Economics');
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('BA 116', 'BA 116', 220);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('BA 250', 'BA 250', 40);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('BA 356', 'BA 356', 50);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('BO 115', 'Biology 115', 70);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('CR 204', 'Curry 204', 110);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('CR 205', 'Curry 205', 110);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('CR 121', 'Computer Science 212', 50);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('LA 200', 'Language 200', 65);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('MU 245', 'Music 245', 50);
+INSERT INTO
+  DEMO_CLASSROOM
+VALUES
+  ('PH 110', 'Physics 110', 250);
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  (
+    'C01',
+    'Introduction to Business',
+    'I01',
+    3,
+    'BA 116'
+  );
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  (
+    'C02',
+    'Introduction to Business',
+    'I06',
+    3,
+    'CR 204'
+  );
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  (
+    'C03',
+    'Business Communications',
+    'I03',
+    3,
+    'CR 205'
+  );
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  ('C04', 'Business Ethics', 'I01', 2, 'BA 356');
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  ('C05', 'Economic Policies', 'I06', 2, 'BO 115');
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  (
+    'C06',
+    'Computer Programming',
+    'I02',
+    3,
+    'CR 121'
+  );
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  ('C07', 'Statistics', 'I04', 3, 'PH 110');
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  ('C08', 'Database', 'I05', 3, 'BA 356');
+INSERT INTO
+  DEMO_COURSE
+VALUES
+  ('C09', 'Java', 'I02', 3, 'BA 250');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R01', 'S01', 'C03');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R02', 'S02', 'C03');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R03', 'S02', 'C06');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R04', 'S03', 'C01');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R05', 'S03', 'C06');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R06', 'S03', 'C07');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R07', 'S04', 'C01');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R08', 'S04', 'C03');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R09', 'S04', 'C07');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R10', 'S05', 'C06');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R11', 'S05', 'C07');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R12', 'S06', 'C02');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R13', 'S06', 'C06');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R14', 'S07', 'C06');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R15', 'S07', 'C07');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R16', 'S08', 'C03');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R17', 'S08', 'C05');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R18', 'S09', 'C02');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R19', 'S09', 'C05');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R20', 'S09', 'C07');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R21', 'S01', 'C08');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R22', 'S02', 'C09');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R23', 'S05', 'C08');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R24', 'S06', 'C09');
+INSERT INTO
+  DEMO_REGISTRATION
+VALUES
+  ('R25', 'S01', 'C09');
+-- 1
+select
+  c.CID as Course_ID,
+  c.TITLE as Course_Title,
+  cl.DESCR as classroom,
+  i.IID
+from
+  DEMO_INSTRUCTOR i
+  join DEMO_COURSE c on i.IID = c.IID
+  join DEMO_CLASSROOM cl on c.CRID = cl.CRID
+where
+  i.IID = "I06";
+-- 2
+select
+  c.IID,
+  count(c.IID) as cantidad_Cursos
+from
+  DEMO_COURSE c
+group by
+  IID -- order by cantidadCursos desc limit 3;
+HAVING
+  count(c.IID) > 1;
+-- 3
+select
+  *
+from
+  DEMO_COURSE dc
+  join DEMO_INSTRUCTOR di on dc.IID = di.IID
+where
+  dc.IID IN (
+    select
+      count(c.IID) as IID
+    from
+      DEMO_COURSE c
+    group by
+      IID
+    HAVING
+      count(c.IID) > 1
+  )
+  AND dc.TITLE LIKE '%Business%'
+  OR dc.HOUR <= 2;
+-- 4
+select
+  di.NAME,
+  di.DEPT,
+  count(dc.IID) as cursos
+from
+  DEMO_INSTRUCTOR di
+  join DEMO_COURSE dc on di.IID = dc.IID
+group by
+  dc.IID
+HAVING
+  count(dc.IID) = 1;
+-- 5
+select
+  dr.CID,
+  count(dr.SID)
+from
+  DEMO_REGISTRATION dr
+group by
+  dr.CID;
+-- 6
+select
+  dc.*,
+  count(dr.CID) as estudiantes
+from
+  DEMO_COURSE dc
+  join DEMO_REGISTRATION dr on dc.CID = dr.CID
+group by
+  dc.CID
+HAVING
+  count(dr.CID) > 4;
+-- 7
+select
+  ds.year,
+  ds.gpa
+from
+  DEMO_STUDENT ds
+order by
+  ds.year,
+  ds.gpa asc;
+-- 8
+select
+  *
+from
+  DEMO_STUDENT
+where
+  YEAR = 1
+  and GPA < 2;
+-- 9
+select
+  dr.CID,
+  dr.SID
+from
+  DEMO_REGISTRATION dr
+  join DEMO_STUDENT ds on dr.SID = ds.SID
+where
+  ds.major like "%Computer%";
