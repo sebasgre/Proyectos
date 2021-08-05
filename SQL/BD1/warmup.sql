@@ -306,22 +306,20 @@ VALUES
 select
   c.CID as Course_ID,
   c.TITLE as Course_Title,
-  cl.DESCR as classroom,
-  i.IID
+  cl.DESCR as Classroom
 from
   DEMO_INSTRUCTOR i
   join DEMO_COURSE c on i.IID = c.IID
   join DEMO_CLASSROOM cl on c.CRID = cl.CRID
 where
-  i.IID = "I06";
+  i.IID = 'I06';
 -- 2
 select
-  c.IID,
-  count(c.IID) as cantidad_Cursos
+  c.IID as ID
 from
   DEMO_COURSE c
 group by
-  IID -- order by cantidadCursos desc limit 3;
+  c.IID
 HAVING
   count(c.IID) > 1;
 -- 3
@@ -345,9 +343,8 @@ where
   OR dc.HOUR <= 2;
 -- 4
 select
-  di.NAME,
-  di.DEPT,
-  count(dc.IID) as cursos
+  di.NAME as Name,
+  di.DEPT as Dept
 from
   DEMO_INSTRUCTOR di
   join DEMO_COURSE dc on di.IID = dc.IID
@@ -357,16 +354,15 @@ HAVING
   count(dc.IID) = 1;
 -- 5
 select
-  dr.CID,
-  count(dr.SID)
+  dr.CID as CID,
+  count(dr.SID) as Numero_De_Estudiantes
 from
   DEMO_REGISTRATION dr
 group by
   dr.CID;
 -- 6
 select
-  dc.*,
-  count(dr.CID) as estudiantes
+  dc.*
 from
   DEMO_COURSE dc
   join DEMO_REGISTRATION dr on dc.CID = dr.CID
@@ -376,8 +372,8 @@ HAVING
   count(dr.CID) > 4;
 -- 7
 select
-  ds.year,
-  ds.gpa
+  ds.year as Año,
+  ds.gpa as GPA
 from
   DEMO_STUDENT ds
 order by
@@ -393,8 +389,8 @@ where
   and GPA < 2;
 -- 9
 select
-  dr.CID,
-  dr.SID
+  dr.CID as CID,
+  dr.SID as SID
 from
   DEMO_REGISTRATION dr
   join DEMO_STUDENT ds on dr.SID = ds.SID
