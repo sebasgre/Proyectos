@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Practico1",
             "request": "launch",
+            "mainClass": "Java.Programacion4.Practico1",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practico1",
+            "request": "launch",
             "mainClass": "Practico1",
             "projectName": "Proyectos_f2fa4dc5"
         },
