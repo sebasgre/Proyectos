@@ -1,0 +1,30 @@
+-- MySQL
+CREATE USER 'test'@'26.%' identified BY 'prueba';
+grant INSERT, SELECT ON empresa.* TO 'test'@'26.%';
+-- grant delete ON empresa.trabajos TO 'test'@'26.%';
+-- revoke select on empresa.empleados from 'test'@'26.%';
+-- DROP USER 'test'@'26.%';
+-- show grants for 'test'@'26.%';
+
+
+-- Postgress SQL
+-- DROP ROLE remoto;
+
+CREATE ROLE remoto WITH 
+	NOSUPERUSER
+	NOCREATEDB
+	NOCREATEROLE
+	NOINHERIT
+	LOGIN
+	NOREPLICATION
+	NOBYPASSRLS
+	CONNECTION LIMIT UNLIMITED;
+
+-- Permissions
+
+GRANT INSERT, SELECT ON TABLE public.departamentos TO remoto;
+GRANT INSERT, SELECT ON TABLE public.dpto_ubicaciones TO remoto;
+GRANT INSERT, SELECT ON TABLE public.empleados TO remoto;
+GRANT INSERT, SELECT ON TABLE public.familiares TO remoto;
+GRANT INSERT, SELECT ON TABLE public.proyectos TO remoto;
+GRANT INSERT, SELECT ON TABLE public.trabajos TO remoto;
