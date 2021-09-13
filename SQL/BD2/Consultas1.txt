@@ -1,0 +1,36 @@
+-- 1 Obtener el total de proyectos y horas trabajadas en las
+-- que participa cada empleado.
+select concat(e.nombre,' ', e.appaterno) as nombre, count(t.proyecto_id) as proyecto, sum(t.horas) as horas 
+from empleados e
+join trabajos t on t.empleado_id = e.ci_id
+group by e.ci_id
+order by e.nombre asc;
+-- 2 Obtener todos los proyectos controlados por departamentos
+-- que tienen mas de dos ubicaciones
+select p.numero_id, p.nombre, du.dpto_id as departamento, count(du.dpto_id) as ubicaciones
+from proyectos p 
+join dpto_ubicaciones du on p.dpto_id = du.dpto_id
+group by p.numero_id, du.dpto_id
+HAVING count(du.dpto_id) > 1; 
+-- 3 Obtener la lista de empleados que nacieron en el mes de marzo
+select *
+from empleados 
+where extract (month from dtNacimiento) = 3;
+-- 4 Obtener todos los departamentos que tienen un costo mayor
+-- al promedio de todos los departamentos
+SELECT d.numero_id, d.nombre, sum(e.salario) as costo
+FROM departamentos d
+JOIN empleados e ON d.numero_id = e.dpto_id
+GROUP BY d.numero_id
+HAVING sum(e.salario) > (SELECT avg(X.costo)
+                            FROM (SELECT sum(e.salario) as costo
+                                    FROM departamentos d
+                                    JOIN empleados e ON d.numero_id = e.dpto_id
+                                    GROUP BY d.numero_id) as X);
+-- 5 Mostrar todos los administradores que no participan
+-- en un proyecto
+select e.ci_id, e.nombre 
+from empleados e
+join departamentos d on e.ci_id = d.admin_id
+left join trabajos t on e.ci_id = t.empleado_id
+where t.empleado_id is null;
