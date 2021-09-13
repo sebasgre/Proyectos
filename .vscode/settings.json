@@ -7,5 +7,6 @@
     ],
     "oneDarkPro.vivid": true,
     "oneDarkPro.bold": true,
-    "oneDarkPro.editorTheme": "oneDarkPro"
+    "oneDarkPro.editorTheme": "oneDarkPro",
+    "maven.view": "flat"
 }

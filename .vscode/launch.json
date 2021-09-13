@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Hola",
+            "request": "launch",
+            "mainClass": "Java.demo.src.main.java.Hola",
+            "projectName": "Proyectos_f2fa4dc5"
+        },
+        {
+            "type": "java",
             "name": "Launch OrdenarLongitud",
             "request": "launch",
             "mainClass": "Java.Programacion4.Practicos.Practico5.OrdenarLongitud",

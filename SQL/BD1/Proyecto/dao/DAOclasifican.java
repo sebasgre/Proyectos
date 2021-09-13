@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import Java.Programacion3.Lista.Lista2;
+import Java.demo.src.main.java.Programacion3.Lista.Lista2;
 import SQL.BD1.Proyecto.dal.DSConexion;
 import SQL.BD1.Proyecto.dto.DTOclasifican;
 
