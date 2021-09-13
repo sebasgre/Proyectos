@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.Programacion3.Lista.Lista2;
+import Java.demo.src.main.java.Programacion3.Lista.Lista2;
 import SQL.BD1.Proyecto.dao.DAOarbitros;
 import SQL.BD1.Proyecto.dao.DAOclasifican;
 import SQL.BD1.Proyecto.dao.DAOdirectoresAdmins;
