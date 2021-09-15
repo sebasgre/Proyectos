@@ -1,13 +1,13 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.gui;
+package Programacion3.practico7y8.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Arbol;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ElementoAritmetico;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Numero;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Operador;
+import Programacion3.practico7y8.modelo.Arbol;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Programacion3.practico7y8.modelo.ElementoAritmetico;
+import Programacion3.practico7y8.modelo.Numero;
+import Programacion3.practico7y8.modelo.Operador;
 
 public class DibujoArbol implements IDibujo {
 

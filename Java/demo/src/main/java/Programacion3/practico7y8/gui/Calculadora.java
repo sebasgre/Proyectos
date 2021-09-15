@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.gui;
+package Programacion3.practico7y8.gui;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
 
 public class Calculadora implements ActionListener, PropertyChangeListener {
 

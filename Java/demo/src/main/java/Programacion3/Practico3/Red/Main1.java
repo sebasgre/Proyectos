@@ -1,9 +1,9 @@
-package Java.demo.src.main.java.Programacion3.Practico3.Red;
+package Programacion3.Practico3.Red;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-import Java.demo.src.main.java.Programacion3.Practico3.Imagenes.Ventana;
+import Programacion3.Practico3.Imagenes.Ventana;
 
 public class Main1 {
     public static void main(String[] args) throws ClassNotFoundException, UnsupportedLookAndFeelException,

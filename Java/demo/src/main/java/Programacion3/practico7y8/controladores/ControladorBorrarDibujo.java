@@ -1,11 +1,9 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.controladores;
-
-
+package Programacion3.practico7y8.controladores;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.gui.PanelArbol;
+import Programacion3.practico7y8.gui.PanelArbol;
 
 public class ControladorBorrarDibujo implements ActionListener {
 
@@ -20,7 +18,7 @@ public class ControladorBorrarDibujo implements ActionListener {
         if (panel.getModelo() == null)
             return;
         panel.getModelo().setRaiz(null);
-        //panel.setModelo(panel.getModelo());
+        // panel.setModelo(panel.getModelo());
         panel.getModelo().cambioOk();
     }
 }

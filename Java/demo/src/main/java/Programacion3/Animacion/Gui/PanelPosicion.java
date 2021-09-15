@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Animacion.Gui;
+package Programacion3.Animacion.Gui;
 
 import java.awt.BorderLayout;
 import java.beans.PropertyChangeEvent;
@@ -7,7 +7,7 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import Java.demo.src.main.java.Programacion3.Animacion.Modelo.Figura;
+import Programacion3.Animacion.Modelo.Figura;
 
 public class PanelPosicion extends JPanel implements PropertyChangeListener {
 

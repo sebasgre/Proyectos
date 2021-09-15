@@ -1,7 +1,7 @@
-package Java.demo.src.main.java.Programacion3.practico6.Arbol;
+package Programacion3.practico6.Arbol;
 
-import Java.demo.src.main.java.Programacion3.Lista.Lista2;
-import Java.demo.src.main.java.Programacion3.practico6.gui.Identificable;
+import Programacion3.Lista.Lista2;
+import Programacion3.practico6.gui.Identificable;
 
 public class Arbol<T extends Identificable> {
     protected Contenedor<T> raiz;

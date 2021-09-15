@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.PatronObserver;
+package Programacion3.PatronObserver;
 
 public class Main {
     public static void main(String[] args) {

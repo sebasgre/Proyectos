@@ -1,6 +1,6 @@
-package Java.demo.src.main.java.Programacion3.Animacion.Main;
+package Programacion3.Animacion.Main;
 
-import Java.demo.src.main.java.Programacion3.Animacion.Gui.FrameAnimacion;
+import Programacion3.Animacion.Gui.FrameAnimacion;
 
 public class Main {
     public static void main(String[] args) {

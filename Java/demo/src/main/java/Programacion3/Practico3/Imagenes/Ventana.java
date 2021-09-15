@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico3.Imagenes;
+package Programacion3.Practico3.Imagenes;
 
 import java.awt.BorderLayout;
 import java.io.IOException;
@@ -12,9 +12,9 @@ import javax.swing.JOptionPane;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.Practico3.ImagenTransformada.Imagenes;
-import Java.demo.src.main.java.Programacion3.Practico3.Red.Enviar;
-import Java.demo.src.main.java.Programacion3.Practico3.Red.Recibir;
+import Programacion3.Practico3.ImagenTransformada.Imagenes;
+import Programacion3.Practico3.Red.Enviar;
+import Programacion3.Practico3.Red.Recibir;
 
 public class Ventana extends JFrame {
     private final Modelo modelo = new Modelo(600, 400);

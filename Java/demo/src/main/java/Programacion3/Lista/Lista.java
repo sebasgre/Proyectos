@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Lista;
+package Programacion3.Lista;
 
 public class Lista {
     private Contenedor raiz;

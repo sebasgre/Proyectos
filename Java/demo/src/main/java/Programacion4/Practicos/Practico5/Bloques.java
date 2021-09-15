@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicos.Practico5;
+package Programacion4.Practicos.Practico5;
 
 import java.util.Scanner;
 
@@ -28,6 +28,13 @@ public class Bloques {
             for (int x = 0; x < matriz.length; x++) {
                 for (int y = matriz[x].length - 1; y > 0; y--) {
                     int fila = 0;
+                    int contador = 0;
+                    for (int i = 0; i < matriz.length; i--) {
+                        if (matriz[x][y] == 0) {
+                            contador++;                          
+                        }
+                    }
+
                     if (matriz[x][y] == 0) {
                         System.out.println("fila " + fila + " columna " + y);
 
@@ -36,7 +43,6 @@ public class Bloques {
                         }
                         matriz[fila - 1][y] = vector[valor];
                         valor++;
-                        
                     }
                 }
             }

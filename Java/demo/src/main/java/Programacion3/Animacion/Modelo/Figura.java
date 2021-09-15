@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Animacion.Modelo;
+package Programacion3.Animacion.Modelo;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

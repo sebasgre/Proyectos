@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico5.Red;
+package Programacion3.Practico5.Red;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

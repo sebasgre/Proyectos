@@ -1,6 +1,6 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.consola;
+package Programacion3.practico7y8.consola;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.gui.FrameArbol;
+import Programacion3.practico7y8.gui.FrameArbol;
 
 public class Consola {
     public static void main(String[] args) {

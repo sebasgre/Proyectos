@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico1.Gui;
+package Programacion3.Practico1.Gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,7 +8,7 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JPanel;
 
-import Java.demo.src.main.java.Programacion3.Practico1.Vista.IDibujo;
+import Programacion3.Practico1.Vista.IDibujo;
 
 public class Panel extends JPanel implements PropertyChangeListener {
     private IDibujo dibujo;

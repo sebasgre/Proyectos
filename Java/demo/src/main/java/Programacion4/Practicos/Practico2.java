@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicos;
+package Programacion4.Practicos;
 
 import java.util.Arrays;
 import java.util.Collections;

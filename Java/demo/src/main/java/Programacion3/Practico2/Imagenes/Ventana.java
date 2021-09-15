@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico2.Imagenes;
+package Programacion3.Practico2.Imagenes;
 
 import java.awt.BorderLayout;
 
@@ -12,7 +12,7 @@ import javax.swing.JMenuItem;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.Practico2.ImagenesTransformadas.Imagenes;
+import Programacion3.Practico2.ImagenesTransformadas.Imagenes;
 
 
 public class Ventana extends JFrame {

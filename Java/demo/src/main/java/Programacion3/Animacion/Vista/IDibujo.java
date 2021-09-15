@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Animacion.Vista;
+package Programacion3.Animacion.Vista;
 
 import java.awt.*;
 

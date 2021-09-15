@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.Modelo;
+package SistemasOperativos1.FilosofosComensales.Modelo;
 
 import java.awt.Color;
 

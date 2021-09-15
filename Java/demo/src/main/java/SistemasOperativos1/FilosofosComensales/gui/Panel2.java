@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.gui;
+package SistemasOperativos1.FilosofosComensales.gui;
 
 import java.awt.Dimension;
 import java.awt.Graphics;

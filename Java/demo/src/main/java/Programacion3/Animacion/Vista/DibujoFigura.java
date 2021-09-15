@@ -1,8 +1,8 @@
-package Java.demo.src.main.java.Programacion3.Animacion.Vista;
+package Programacion3.Animacion.Vista;
 
 import java.awt.Graphics;
 
-import Java.demo.src.main.java.Programacion3.Animacion.Modelo.Figura;
+import Programacion3.Animacion.Modelo.Figura;
 
 public class DibujoFigura implements IDibujo {
 

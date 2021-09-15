@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicos.Practico4;
+package Programacion4.Practicos.Practico4;
 
 import java.util.LinkedList;
 import java.util.Queue;

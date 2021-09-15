@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.gui;
+package Programacion3.practico7y8.gui;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -11,9 +11,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.controladores.ControladorBorrarDibujo;
-import Java.demo.src.main.java.Programacion3.practico7y8.controladores.ControladorNuevaExpresion;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Programacion3.practico7y8.controladores.ControladorBorrarDibujo;
+import Programacion3.practico7y8.controladores.ControladorNuevaExpresion;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
 
 public class FrameArbol extends JFrame {
 
