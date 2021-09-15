@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico6.view;
+package Programacion3.practico6.view;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -6,12 +6,12 @@ import java.awt.Graphics;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.Animacion.Vista.IDibujo;
-import Java.demo.src.main.java.Programacion3.practico6.Arbol.Arbol;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.ElementoAritmetico;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Numero;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Operador;
-import Java.demo.src.main.java.Programacion3.practico6.modelo.ArbolAritmetico;
+import Programacion3.Practico4.Vista.IDibujo;
+import Programacion3.practico6.Arbol.Arbol;
+import Programacion3.practico6.aritmetico.ElementoAritmetico;
+import Programacion3.practico6.aritmetico.Numero;
+import Programacion3.practico6.aritmetico.Operador;
+import Programacion3.practico6.modelo.ArbolAritmetico;
 
 public class DibujoArbol implements IDibujo {
 
@@ -23,13 +23,6 @@ public class DibujoArbol implements IDibujo {
 
     public DibujoArbol(ArbolAritmetico obj) {
         modelo = obj;
-    }
-
-    @Override
-    public void dibujar(Graphics g) {
-        Arbol.Contenedor<ElementoAritmetico> raiz = modelo.getRaiz();
-        dibujarContenedor(raiz, 10, 10, g);
-        logger.debug("Aqui se dibuja cada nodo");
     }
 
     public void dibujarContenedor(Arbol.Contenedor<ElementoAritmetico> contenedor, int x, int y, Graphics g) {
@@ -80,5 +73,19 @@ public class DibujoArbol implements IDibujo {
             espacio = ESPACIO_HORIZONTAL;
         }
         return result;
+    }
+
+    @Override
+    public void dibujo(Graphics g) {
+        Arbol.Contenedor<ElementoAritmetico> raiz = modelo.getRaiz();
+        dibujarContenedor(raiz, 10, 10, g);
+        logger.debug("Aqui se dibuja cada nodo");
+
+    }
+
+    @Override
+    public void eliminar() {
+        // TODO Auto-generated method stub
+
     }
 }

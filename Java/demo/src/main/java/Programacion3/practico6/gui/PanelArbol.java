@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico6.gui;
+package Programacion3.practico6.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -10,15 +10,16 @@ import java.beans.PropertyChangeListener;
 
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.practico6.Arbol.Arbol;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.ElementoAritmetico;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Numero;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Operador;
-import Java.demo.src.main.java.Programacion3.practico6.modelo.ArbolAritmetico;
-import Java.demo.src.main.java.Programacion3.practico6.view.DibujoArbol;
+import Programacion3.practico6.Arbol.Arbol;
+import Programacion3.practico6.aritmetico.ElementoAritmetico;
+import Programacion3.practico6.aritmetico.Numero;
+import Programacion3.practico6.aritmetico.Operador;
+import Programacion3.practico6.modelo.ArbolAritmetico;
+import Programacion3.practico6.view.DibujoArbol;
 
 public class PanelArbol extends JPanel implements MouseListener, PropertyChangeListener {
 
@@ -40,7 +41,7 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
         super.paintComponent(g);
         if (modelo != null) {
             DibujoArbol dibujoArbol = new DibujoArbol(modelo);
-            dibujoArbol.dibujar(g);
+            dibujoArbol.dibujo(g);
         }
     }
 

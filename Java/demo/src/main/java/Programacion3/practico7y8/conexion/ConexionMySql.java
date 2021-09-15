@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.conexion;
+package Programacion3.practico7y8.conexion;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

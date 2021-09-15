@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.gui;
+package Programacion3.practico7y8.gui;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -17,11 +17,11 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import Java.demo.src.main.java.Programacion3.Lista.Lista2;
-import Java.demo.src.main.java.Programacion3.practico7y8.dao.DaoExpresion;
-import Java.demo.src.main.java.Programacion3.practico7y8.dao.FactoryDao;
-import Java.demo.src.main.java.Programacion3.practico7y8.dto.DTOexpresion;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Programacion3.Lista.Lista2;
+import Programacion3.practico7y8.dao.DaoExpresion;
+import Programacion3.practico7y8.dao.FactoryDao;
+import Programacion3.practico7y8.dto.DTOexpresion;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
 
 public class PanelTablaExpresiones extends JPanel implements PropertyChangeListener {
 

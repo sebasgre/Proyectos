@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico6.modelo;
+package Programacion3.practico6.modelo;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -6,10 +6,12 @@ import java.beans.PropertyChangeSupport;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.practico6.Arbol.Arbol;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.ElementoAritmetico;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Numero;
-import Java.demo.src.main.java.Programacion3.practico6.aritmetico.Operador;
+import Programacion3.practico6.Arbol.Arbol;
+import Programacion3.practico6.aritmetico.ElementoAritmetico;
+import Programacion3.practico6.aritmetico.Numero;
+import Programacion3.practico6.aritmetico.Operador;
+
+
 
 public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
     private PropertyChangeSupport observed;

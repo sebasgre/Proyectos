@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico6.aritmetico;
+package Programacion3.practico6.aritmetico;
 
 public class Operador extends ElementoAritmetico {
 

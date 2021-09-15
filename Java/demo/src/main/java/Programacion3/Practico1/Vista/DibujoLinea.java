@@ -1,8 +1,8 @@
-package Java.demo.src.main.java.Programacion3.Practico1.Vista;
+package Programacion3.Practico1.Vista;
 
 import java.awt.Graphics;
 
-import Java.demo.src.main.java.Programacion3.Practico1.Modelo.Linea;
+import Programacion3.Practico1.Modelo.Linea;
 
 public class DibujoLinea implements IDibujo {
     private Linea[] lineas;

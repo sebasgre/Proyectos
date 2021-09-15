@@ -1,6 +1,6 @@
-package Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.Consola;
+package SistemasOperativos1.FilosofosComensales.Consola;
 
-import Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.gui.Frame;
+import SistemasOperativos1.FilosofosComensales.gui.Frame;
 
 public class Consola {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.gui;
+package Programacion3.practico7y8.gui;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -23,15 +23,15 @@ import javax.swing.event.ListSelectionListener;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.Lista.Lista2;
-import Java.demo.src.main.java.Programacion3.practico7y8.dao.DaoExpresion;
-import Java.demo.src.main.java.Programacion3.practico7y8.dao.FactoryDao;
-import Java.demo.src.main.java.Programacion3.practico7y8.dto.DTOexpresion;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Arbol;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ElementoAritmetico;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Numero;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.Operador;
+import Programacion3.Lista.Lista2;
+import Programacion3.practico7y8.dao.DaoExpresion;
+import Programacion3.practico7y8.dao.FactoryDao;
+import Programacion3.practico7y8.dto.DTOexpresion;
+import Programacion3.practico7y8.modelo.Arbol;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
+import Programacion3.practico7y8.modelo.ElementoAritmetico;
+import Programacion3.practico7y8.modelo.Numero;
+import Programacion3.practico7y8.modelo.Operador;
 
 public class PanelArbol extends JPanel implements MouseListener, PropertyChangeListener {
 

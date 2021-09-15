@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicos.Ejercicios;
+package Programacion4.Practicos.Ejercicios;
 
 import java.math.BigInteger;
 import java.util.Scanner;

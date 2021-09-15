@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicos.Practico5;
+package Programacion4.Practicos.Practico5;
 
 import java.util.Scanner;
 

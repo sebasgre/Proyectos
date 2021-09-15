@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico3.Red;
+package Programacion3.Practico3.Red;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

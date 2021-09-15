@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico6.gui;
+package Programacion3.practico6.gui;
 
 import java.awt.BorderLayout;
 
@@ -9,7 +9,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 
-import Java.demo.src.main.java.Programacion3.practico6.modelo.ArbolAritmetico;
+import Programacion3.practico6.modelo.ArbolAritmetico;
+
+
 
 public class FrameArbol extends JFrame {
     private static ArbolAritmetico modelo;

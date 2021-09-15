@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.gui;
+package SistemasOperativos1.FilosofosComensales.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -14,10 +14,11 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.SistemasOperativos1.FilosofosComensales.Modelo.Filosofo;
+import SistemasOperativos1.FilosofosComensales.Modelo.Filosofo;
 
 public class Frame extends JFrame {
     private Panel1 panel1;

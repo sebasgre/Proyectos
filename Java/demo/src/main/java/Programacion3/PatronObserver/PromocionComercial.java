@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.PatronObserver;
+package Programacion3.PatronObserver;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

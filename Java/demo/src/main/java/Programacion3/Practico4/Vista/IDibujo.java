@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico4.Vista;
+package Programacion3.Practico4.Vista;
 
 import java.awt.*;
 

@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico2.Imagenes;
+package Programacion3.Practico2.Imagenes;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

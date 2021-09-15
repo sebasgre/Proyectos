@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.dto;
+package Programacion3.practico7y8.dto;
 
 public class DTOexpresion {
 

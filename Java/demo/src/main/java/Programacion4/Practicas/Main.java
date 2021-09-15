@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion4.Practicas;
+package Programacion4.Practicas;
 
 public class Main {
     public static void main(String[] args) {

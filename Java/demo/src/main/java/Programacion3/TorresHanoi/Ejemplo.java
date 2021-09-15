@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.TorresHanoi;
+package Programacion3.TorresHanoi;
 
 public class Ejemplo {
     public void torresHanoi(int discos, int torre1, int torre2, int torre3) {

@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.conexion;
+package Programacion3.practico7y8.conexion;
 
 public abstract class Conexion implements IConexion{
 

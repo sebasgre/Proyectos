@@ -1,4 +1,4 @@
-package Java.demo.src.main.java.Programacion3.Practico2.ImagenesTransformadas;
+package Programacion3.Practico2.ImagenesTransformadas;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -13,7 +13,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.Practico2.Imagenes.Modelo;
+import Programacion3.Practico2.Imagenes.Modelo;
 
 
 

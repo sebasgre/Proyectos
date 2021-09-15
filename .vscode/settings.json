@@ -8,5 +8,6 @@
     "oneDarkPro.vivid": true,
     "oneDarkPro.bold": true,
     "oneDarkPro.editorTheme": "oneDarkPro",
-    "maven.view": "flat"
+    "maven.view": "flat",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

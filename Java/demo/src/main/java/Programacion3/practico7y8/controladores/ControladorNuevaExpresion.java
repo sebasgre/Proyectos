@@ -1,14 +1,16 @@
-package Java.demo.src.main.java.Programacion3.practico7y8.controladores;
+package Programacion3.practico7y8.controladores;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Java.demo.src.main.java.Programacion3.practico7y8.gui.PanelArbol;
-import Java.demo.src.main.java.Programacion3.practico7y8.modelo.ArbolAritmetico;
-
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import Programacion3.practico7y8.gui.PanelArbol;
+import Programacion3.practico7y8.modelo.ArbolAritmetico;
 
 public class ControladorNuevaExpresion implements ActionListener {
 
