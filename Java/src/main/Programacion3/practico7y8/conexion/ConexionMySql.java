@@ -1,12 +1,11 @@
 package Programacion3.practico7y8.conexion;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import java.sql.*;
 
 public class ConexionMySql extends Conexion{
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     private String host;
     private String database;
@@ -28,14 +27,15 @@ public class ConexionMySql extends Conexion{
         urlcredentials = url + "?user=" + username + "&password=" + password;
         try {
             conn = DriverManager.getConnection(urlcredentials);
+            System.out.println("Conexion exitosa!");
             /*
             DriverManager pregunta entre las clases que tiene a disposicion,  en el servidor
             le va preguntar si no hay alguna que entiene la url, si las hay da una instancia
             de una connection
              */
         } catch (SQLException e) {
-            System.out.println("No puede conetarse al servidor");
-            logger.info("No pudo conectarse al servidor");
+            System.out.println(e.getMessage());
+            //logger.info("No pudo conectarse al servidor");
         }
     }
 

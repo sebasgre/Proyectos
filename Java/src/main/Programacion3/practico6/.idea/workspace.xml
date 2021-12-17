@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d220d120-d346-479e-aa9e-c9f70ede4c43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../practico7y8/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/.idea/libraries/mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/Lista/Contenedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/Lista/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/Lista/Lista2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/Lista/ListaDoble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico7y8/Lista/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatronObserver/CuentaBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatronObserver/CuentaBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatronObserver/PromocionComercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatronObserver/PromocionComercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/ImagenTransformada/PintarEnXY.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/ImagenTransformada/PintarEnXY.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/Imagenes/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/Imagenes/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/Red/Enviar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/Red/Enviar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/conexion/ConexionMySql.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/conexion/ConexionMySql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/controladores/ControladorNuevaExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/controladores/ControladorNuevaExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/dao/DaoExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/dao/DaoExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/dao/DaoSqlExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/dao/DaoSqlExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/gui/Calculadora.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/PanelArbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/gui/PanelArbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/PanelTablaExpresiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/gui/PanelTablaExpresiones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/division.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/division.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/igual.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/igual.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/modeloVentana.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/modeloVentana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/multiplicacion.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/multiplicacion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/potencia.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/potencia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/raiz.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/raiz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/relativo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/relativo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/resta.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/resta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/servers.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/servers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/gui/imagenes/suma.png" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/imagenes/suma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico7y8/modelo/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico7y8/modelo/Arbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion4/Practicas/Factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/Consola/Consola.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/Consola/Consola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/gui/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/gui/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/TestFactorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SQL/BD1/Proyecto/ConexionSimple/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SQL/BD1/Proyecto/ConexionSimple/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SQL/BD2/empresa2.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="207ER7uve40HznTg7GSHJK7H40E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d220d120-d346-479e-aa9e-c9f70ede4c43" name="Changes" comment="" />
+      <created>1635387214663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635387214663</updated>
+      <workItem from="1635387215929" duration="115000" />
+      <workItem from="1639422482386" duration="86000" />
+      <workItem from="1639422611559" duration="1459000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

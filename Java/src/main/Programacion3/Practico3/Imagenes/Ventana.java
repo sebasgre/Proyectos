@@ -1,27 +1,19 @@
 package Programacion3.Practico3.Imagenes;
 
-import java.awt.BorderLayout;
-import java.io.IOException;
-
-import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import Programacion3.Practico3.ImagenTransformada.Imagenes;
 import Programacion3.Practico3.Red.Enviar;
 import Programacion3.Practico3.Red.Recibir;
+
+import javax.swing.*;
+import java.awt.*;
+import java.io.IOException;
 
 public class Ventana extends JFrame {
     private final Modelo modelo = new Modelo(600, 400);
     private Enviar conexion;
     private final Imagenes imagenes = new Imagenes(modelo);
     private final PanelImagen panelImagen = new PanelImagen(modelo);
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     public Ventana() {
         init();
@@ -64,7 +56,7 @@ public class Ventana extends JFrame {
 
     public void cargarImagen() {
         imagenes.hacer();
-        logger.info("Aqui se carga la imagen seleccionada del JfileChooser");
+        //logger.info("Aqui se carga la imagen seleccionada del JfileChooser");
     }
 
     public void conectarse() {
@@ -81,7 +73,7 @@ public class Ventana extends JFrame {
             JOptionPane.showMessageDialog(this, "La ip deben ser 4 numeros enteros menores a 255");
             return;
         }
-        
+
         try {
             conexion = new Enviar(ip, leerPuerto);
         } catch (Exception e) {
@@ -109,7 +101,7 @@ public class Ventana extends JFrame {
         Thread recibiendo = new Thread(recibir);
         recibiendo.start();
         añadirObservador();
-        logger.info("Aqui se establece la conexion");
+        //logger.info("Aqui se establece la conexion");
     }
 
     private void esperarConexion() {
@@ -146,7 +138,7 @@ public class Ventana extends JFrame {
             Thread recibiendo = new Thread(recibir);
             recibiendo.start();
             añadirObservador();
-            logger.info("Aqui el servidor espera que haya una conexion por parte del cliente");
+            //logger.info("Aqui el servidor espera que haya una conexion por parte del cliente");
         }
     }
 

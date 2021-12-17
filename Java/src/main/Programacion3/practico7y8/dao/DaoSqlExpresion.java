@@ -1,18 +1,15 @@
 package Programacion3.practico7y8.dao;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import Programacion3.Lista.Lista2;
+import Programacion3.practico7y8.Lista.Lista2;
 import Programacion3.practico7y8.conexion.Conexion;
 import Programacion3.practico7y8.dto.DTOexpresion;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class DaoSqlExpresion extends DaoExpresion {
 
-    public static Logger logger = LogManager.getLogger();
+    //public static Logger logger = LogManager.getLogger();
 
     @Override
     public Lista2<DTOexpresion> getTodos() {
@@ -23,7 +20,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             rs = conexion.ejecutarConsulta(query);
         } catch (Exception e) {
-            logger.debug("No pudo ejecutar consulta");
+//            logger.debug("No pudo ejecutar consulta");
         }
         try {
             resultado = new Lista2<DTOexpresion>();
@@ -34,7 +31,8 @@ public class DaoSqlExpresion extends DaoExpresion {
                 resultado.add(new DTOexpresion(nombre, expresion));
             }
         } catch (SQLException e) {
-            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
+//            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
+            System.out.println(e.getNextException());
         }
         return resultado;
     }
@@ -48,7 +46,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             rs = conexion.ejecutarConsulta(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar consulta");
+//            logger.debug("No se pudo ejecutar consulta");
             return resultado;
         }
         try {
@@ -58,7 +56,7 @@ public class DaoSqlExpresion extends DaoExpresion {
                 resultado = new DTOexpresion(nombre, expresion);
             }
         } catch (SQLException e) {
-            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
+//            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
         }
         return resultado;
     }
@@ -72,7 +70,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             rs = conexion.ejecutarConsulta(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar la consulta");
+//            logger.debug("No se pudo ejecutar la consulta");
             return resultado;
         }
         try {
@@ -82,7 +80,7 @@ public class DaoSqlExpresion extends DaoExpresion {
                 resultado = new DTOexpresion(nombre, expresions);
             }
         } catch (SQLException e) {
-            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
+//            logger.debug("Error recuperando datos del resultset: " + e.getMessage());
         }
         return resultado;
     }
@@ -94,7 +92,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             conexion.ejecutarComando(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar consulta insert");
+//            logger.debug("No se pudo ejecutar consulta insert");
         }
     }
 
@@ -106,7 +104,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             conexion.ejecutarComando(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar la consulta update");
+//            logger.debug("No se pudo ejecutar la consulta update");
         }
     }
 
@@ -117,7 +115,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             conexion.ejecutarComando(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar la consulta delete");
+//            logger.debug("No se pudo ejecutar la consulta delete");
         }
     }
 
@@ -128,7 +126,7 @@ public class DaoSqlExpresion extends DaoExpresion {
             Conexion conexion = Conexion.getOrCreate();
             conexion.ejecutarComando(query);
         } catch (Exception e) {
-            logger.debug("No se pudo ejecutar la consulta delete");
+//            logger.debug("No se pudo ejecutar la consulta delete");
         }
     }
 }

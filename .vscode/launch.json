@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Practico1",
+            "request": "launch",
+            "mainClass": "Practico1",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Buscador",
+            "request": "launch",
+            "mainClass": "Buscador",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch SesgadoBinario",
+            "request": "launch",
+            "mainClass": "SesgadoBinario",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
             "name": "Launch Hola",
             "request": "launch",
             "mainClass": "Java.demo.src.main.java.Hola",

@@ -1,6 +1,6 @@
 package Programacion3.practico7y8.modelo;
 
-import Programacion3.Lista.Lista2;
+import Programacion3.practico7y8.Lista.Lista2;
 
 public class Arbol<T extends Identificable> {
     protected Contenedor<T> raiz;

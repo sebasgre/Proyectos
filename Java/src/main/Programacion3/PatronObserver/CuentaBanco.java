@@ -1,8 +1,5 @@
 package Programacion3.PatronObserver;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.beans.PropertyChangeSupport;
 
 public class CuentaBanco {
@@ -10,7 +7,7 @@ public class CuentaBanco {
     private String cliente;
 
     private PropertyChangeSupport cambios;
-    private final static Logger logger = LogManager.getLogger();
+//    private final static Logger logger = LogManager.getLogger();
 
     public CuentaBanco(String clt, int i) {
         cliente = clt;
@@ -32,7 +29,7 @@ public class CuentaBanco {
         saldo += i;
 
         cambios.firePropertyChange("SALDO", oldSaldo, saldo);
-        logger.info("Aqui se modifica el valor del saldo " + oldSaldo + " cambia a " + saldo);
+//        logger.info("Aqui se modifica el valor del saldo " + oldSaldo + " cambia a " + saldo);
     }
 
     public void sacar(int i) {
@@ -40,7 +37,7 @@ public class CuentaBanco {
         saldo -= i;
 
         cambios.firePropertyChange("SALDO", oldSaldo, saldo);
-        logger.info("Aqui se modifica el valor del saldo " + oldSaldo + " cambia a " + saldo);
+//        logger.info("Aqui se modifica el valor del saldo " + oldSaldo + " cambia a " + saldo);
     }
 
     public int getSaldo() {
