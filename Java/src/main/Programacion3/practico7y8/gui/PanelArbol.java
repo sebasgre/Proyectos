@@ -1,7 +1,15 @@
 package Programacion3.practico7y8.gui;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
+import Programacion3.practico7y8.Lista.Lista2;
+import Programacion3.practico7y8.dao.DaoExpresion;
+import Programacion3.practico7y8.dao.FactoryDao;
+import Programacion3.practico7y8.dto.DTOexpresion;
+import Programacion3.practico7y8.modelo.*;
+
+import javax.swing.*;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -10,32 +18,9 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-import javax.swing.DefaultListModel;
-import javax.swing.JButton;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import Programacion3.Lista.Lista2;
-import Programacion3.practico7y8.dao.DaoExpresion;
-import Programacion3.practico7y8.dao.FactoryDao;
-import Programacion3.practico7y8.dto.DTOexpresion;
-import Programacion3.practico7y8.modelo.Arbol;
-import Programacion3.practico7y8.modelo.ArbolAritmetico;
-import Programacion3.practico7y8.modelo.ElementoAritmetico;
-import Programacion3.practico7y8.modelo.Numero;
-import Programacion3.practico7y8.modelo.Operador;
-
 public class PanelArbol extends JPanel implements MouseListener, PropertyChangeListener {
 
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     private ArbolAritmetico modelo;
     private JButton guardarExpresion;
@@ -179,18 +164,18 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
         if (e.getX() >= contenedor.getPosX() && e.getX() <= (contenedor.getPosX() + contenedor.getAnchoContenedor())) {
             if (e.getY() >= contenedor.getPosY()
                     && e.getY() <= (contenedor.getPosY() + contenedor.getAnchoContenedor())) {
-                logger.info("Contenedor en X: " + contenedor.getPosX() + " - "
-                        + (contenedor.getPosX() + contenedor.getAnchoContenedor()));
-                logger.info("Contenedor en Y: " + contenedor.getPosY() + " - "
-                        + (contenedor.getPosY() + contenedor.getAnchoContenedor()));
-                logger.info("Mous X: " + e.getX() + " Y: " + e.getY());
+//                logger.info("Contenedor en X: " + contenedor.getPosX() + " - "
+//                        + (contenedor.getPosX() + contenedor.getAnchoContenedor()));
+//                logger.info("Contenedor en Y: " + contenedor.getPosY() + " - "
+//                        + (contenedor.getPosY() + contenedor.getAnchoContenedor()));
+//                logger.info("Mous X: " + e.getX() + " Y: " + e.getY());
                 ElementoAritmetico elementoAritmetico = contenedor.getContenido();
                 if (elementoAritmetico instanceof Numero) {
-                    logger.info("Contenido del contenedor: " + ((Numero) elementoAritmetico).getValor());
+//                    logger.info("Contenido del contenedor: " + ((Numero) elementoAritmetico).getValor());
                 } else {
                     Operador operacion = (Operador) elementoAritmetico;
                     String operacionString = operacion.getSimbolo();
-                    logger.info("Contenido del contenedor: " + operacionString);
+//                    logger.info("Contenido del contenedor: " + operacionString);
                 }
                 return contenedor;
             }
@@ -237,7 +222,7 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
                 arbolAritmetico = new ArbolAritmetico(modelo.toStringAritmetico(seleccionado));
                 arbolAritmetico.setRaiz(seleccionado);
                 String operacion = arbolAritmetico.toString();
-                logger.info(operacion);
+//                logger.info(operacion);
                 JOptionPane.showMessageDialog(null, operacion);
             }
         } catch (Exception exception) {
@@ -276,10 +261,10 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
      * ElementoAritmetico elementoAritmetico = nodo.getContenido(); if
      * (elementoAritmetico instanceof Numero) { return String.valueOf(((Numero)
      * elementoAritmetico).getValor()); }
-     * 
+     *
      * Operador operacion = (Operador) elementoAritmetico; String operacionString =
      * operacion.getSimbolo();
-     * 
+     *
      * StringBuilder resultado = new StringBuilder(); String separador = ""; for
      * (Arbol.Contenedor<ElementoAritmetico> hijo : nodo.getHijos()) { String
      * hijoString = toStringAritmetico(hijo);
@@ -292,7 +277,7 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
      * (Arbol.Contenedor<ElementoAritmetico> hijo : contenedor.getHijos()) {
      * resultado = accederPosicion(hijo, e); if(!resultado.equals("VACIO")){ break;
      * } }
-     * 
+     *
      * if (e.getX() >= contenedor.getPosX() && e.getX() <= (contenedor.getPosX() +
      * 40)) { System.out.println("Dentro de los parametros X"); if (e.getY() >=
      * contenedor.getPosY() && e.getY() <= (contenedor.getPosY() + 40)) {

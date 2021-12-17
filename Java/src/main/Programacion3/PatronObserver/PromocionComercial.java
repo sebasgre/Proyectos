@@ -1,8 +1,5 @@
 package Programacion3.PatronObserver;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
@@ -10,7 +7,7 @@ public class PromocionComercial implements PropertyChangeListener {
 
     private int condicionParaPromo;
     private int incentivoPromo;
-    private final static Logger logger = LogManager.getLogger();
+//    private final static Logger logger = LogManager.getLogger();
 
     public PromocionComercial(int cada, int incentivo) {
         condicionParaPromo = cada;
@@ -35,7 +32,7 @@ public class PromocionComercial implements PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        logger.info("Aqui notificamos al observador para que realice los cambios");
+//        logger.info("Aqui notificamos al observador para que realice los cambios");
         CuentaBanco ctaBanco = (CuentaBanco)evt.getSource();
 
         if (!evt.getPropertyName().equals("SALDO"))

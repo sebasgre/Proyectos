@@ -15,8 +15,8 @@ import javax.swing.JMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+//import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.Logger;
 
 import SistemasOperativos1.FilosofosComensales.Modelo.Filosofo;
 
@@ -50,14 +50,14 @@ public class Frame extends JFrame {
     private JLabel labCom3;
     private JLabel labCom4;
     private JLabel labCom5;
-    
+
     private JLabel labTen1;
     private JLabel labTen2;
     private JLabel labTen3;
     private JLabel labTen4;
     private JLabel labTen5;
     private JTextArea tAreaProceso;
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     public Frame() {
         init1();
@@ -265,7 +265,7 @@ public class Frame extends JFrame {
                 izq = 4;
             }
             der = vector[k];
-            logger.info("Filosofo random ingresado " + vector[k]);
+            //logger.info("Filosofo random ingresado " + vector[k]);
             com = new Filosofo(vector[k], tenedor[izq], tenedor[der], filosofo[vector[k]], porcentaje[vector[k]],
                     resultado[vector[k]], tAreaProceso);
         }

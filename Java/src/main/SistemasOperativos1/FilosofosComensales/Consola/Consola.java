@@ -1,6 +1,6 @@
 package SistemasOperativos1.FilosofosComensales.Consola;
 
-import SistemasOperativos1.FilosofosComensales.gui.Frame;
+import java.awt.*;
 
 public class Consola {
     public static void main(String[] args) {

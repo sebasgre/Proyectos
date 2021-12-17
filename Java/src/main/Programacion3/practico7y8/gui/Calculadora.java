@@ -4,9 +4,12 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.io.File;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JDialog;
@@ -50,6 +53,7 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
 
     private JScrollPane scroll;
     private String pantalla = "";
+    private BufferedImage imagen;
 
 
     private void iniciarComponentes() {
@@ -129,15 +133,23 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
         btnDEL.setBorder(null);
         btnDEL.setFont(fuente2);
         btnRaiz.setBounds(220, 0, 50, 40);
-        ImageIcon image1 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/raiz.png"));
+        try {
+            imagen = ImageIO.read(new File("imagenes/raiz.png"));
+            btnRaiz.setIcon(new ImageIcon(imagen.getScaledInstance(btnRaiz.getWidth(), btnRaiz.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         btnRaiz.setBorder(null);
         btnRaiz.setBackground(Color.WHITE);
-        btnRaiz.setIcon(new ImageIcon(image1.getImage().getScaledInstance(btnRaiz.getWidth(), btnRaiz.getHeight(), image1.getImageLoadStatus())));
         btnDivision.setBounds(220, 100, 50, 40);
-        ImageIcon image2 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/division.png"));
+        try {
+            imagen = ImageIO.read(new File("imagenes/division.png"));
+            btnDivision.setIcon(new ImageIcon(imagen.getScaledInstance(btnDivision.getWidth(), btnDivision.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         btnDivision.setBorder(null);
         btnDivision.setBackground(Color.WHITE);
-        btnDivision.setIcon(new ImageIcon(image2.getImage().getScaledInstance(btnDivision.getWidth(), btnDivision.getHeight(), image2.getImageLoadStatus())));
         btn7.setBounds(10, 50, 50, 40);
         btn7.setForeground(Color.BLACK);
         btn7.setBackground(Color.WHITE);
@@ -157,10 +169,14 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
         btn9.setBorder(null);
         btn9.setFont(fuente2);
         btnMultiplicacion.setBounds(220, 150, 50, 40);
-        ImageIcon image3 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/multiplicacion.png"));
+        try {
+            imagen = ImageIO.read(new File("imagenes/multiplicacion.png"));
+            btnMultiplicacion.setIcon(new ImageIcon(imagen.getScaledInstance(btnMultiplicacion.getWidth(), btnMultiplicacion.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         btnMultiplicacion.setBorder(null);
         btnMultiplicacion.setBackground(Color.BLACK);
-        btnMultiplicacion.setIcon(new ImageIcon(image3.getImage().getScaledInstance(btnMultiplicacion.getWidth(), btnMultiplicacion.getHeight(), image3.getImageLoadStatus())));
         btn4.setBounds(10, 100, 50, 40);
         btn4.setForeground(Color.BLACK);
         btn4.setBackground(Color.WHITE);
@@ -180,10 +196,14 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
         btn6.setBorder(null);
         btn6.setFont(fuente2);
         btnResta.setBounds(220, 200, 50, 40);
-        ImageIcon image4 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/resta.png"));
+        try {
+            imagen = ImageIO.read(new File("imagenes/resta.png"));
+            btnResta.setIcon(new ImageIcon(imagen.getScaledInstance(btnResta.getWidth(), btnResta.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         btnResta.setBorder(null);
         btnResta.setBackground(Color.WHITE);
-        btnResta.setIcon(new ImageIcon(image4.getImage().getScaledInstance(btnResta.getWidth(), btnResta.getHeight(), image4.getImageLoadStatus())));
         btn1.setBounds(10, 150, 50, 40);
         btn1.setForeground(Color.BLACK);
         btn1.setBackground(Color.WHITE);
@@ -203,10 +223,13 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
         btn3.setBorder(null);
         btn3.setFont(fuente2);
         btnSuma.setBounds(220, 250, 50, 40);
-        ImageIcon image5 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/suma.png"));
-        btnSuma.setBorder(null);
+        try {
+            imagen = ImageIO.read(new File("imagenes/suma.png"));
+            btnSuma.setIcon(new ImageIcon(imagen.getScaledInstance(btnSuma.getWidth(), btnSuma.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        btnSuma.setBorder(null);
         btnSuma.setBackground(Color.WHITE);
-        btnSuma.setIcon(new ImageIcon(image5.getImage().getScaledInstance(50, 40, image5.getImageLoadStatus())));
         btnPotencia.setBounds(220, 50, 50, 40);
         btnPotencia.setForeground(Color.WHITE);
         btnPotencia.setBackground(Color.BLACK);
@@ -232,10 +255,13 @@ public class Calculadora implements ActionListener, PropertyChangeListener {
         btnDecimal.setBorder(null);
         btnDecimal.setFont(fuente2);
         btnIgualdad.setBounds(10, 250, 120, 40);
-        ImageIcon image6 = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/igual.png"));
-        btnIgualdad.setBorder(null);
+        try {
+            imagen = ImageIO.read(new File("imagenes/igual.png"));
+            btnIgualdad.setIcon(new ImageIcon(imagen.getScaledInstance(btnIgualdad.getWidth(), btnIgualdad.getHeight(), 0)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }        btnIgualdad.setBorder(null);
         btnIgualdad.setBackground(Color.WHITE);
-        btnIgualdad.setIcon(new ImageIcon(image6.getImage().getScaledInstance(btnIgualdad.getWidth(), btnIgualdad.getHeight(), image6.getImageLoadStatus())));
         btnParentesisCerrado.setBounds(150, 250, 50, 40);
         btnParentesisCerrado.setForeground(Color.BLACK);
         btnParentesisCerrado.setBackground(Color.WHITE);

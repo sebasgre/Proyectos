@@ -1,17 +1,14 @@
 package Programacion3.Practico3.ImagenTransformada;
 
-import javax.swing.JOptionPane;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import Programacion3.Practico3.Imagenes.Modelo;
+
+import javax.swing.*;
 
 public class PintarEnXY extends Transformacion {
     private int x;
     private int y;
     private boolean control;
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     public PintarEnXY(Modelo img, int x, int y) {
         modeloBase = img;
@@ -62,7 +59,7 @@ public class PintarEnXY extends Transformacion {
             if (control == true) {
                 JOptionPane.showMessageDialog(null, "HAS GANADO EL JUEGO");
                     System.exit(0);
-                    logger.info("Aqui verificamos al ganador, donde quedara la imagen sola");
+                    //logger.info("Aqui verificamos al ganador, donde quedara la imagen sola");
             }
         } catch (StackOverflowError ex) {
             //System.out.println("Termina por stack overflow");

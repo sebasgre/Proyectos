@@ -1,6 +1,6 @@
 package Programacion3.practico7y8.dao;
 
-import Programacion3.Lista.Lista2;
+import Programacion3.practico7y8.Lista.Lista2;
 import Programacion3.practico7y8.dto.DTOexpresion;
 
 public abstract class DaoExpresion {

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="12a52d16-a33a-434d-be34-515cb78de247" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lista/Contenedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista/Lista2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista/ListaDoble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lista/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatronObserver/CuentaBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatronObserver/CuentaBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatronObserver/PromocionComercial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatronObserver/PromocionComercial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/ImagenTransformada/PintarEnXY.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/ImagenTransformada/PintarEnXY.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/Imagenes/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/Imagenes/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico3/Red/Enviar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico3/Red/Enviar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conexion/ConexionMySql.java" beforeDir="false" afterPath="$PROJECT_DIR$/conexion/ConexionMySql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controladores/ControladorNuevaExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/controladores/ControladorNuevaExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/DaoExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/DaoExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/DaoSqlExpresion.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/DaoSqlExpresion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/PanelArbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/PanelArbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/PanelTablaExpresiones.java" beforeDir="false" afterPath="$PROJECT_DIR$/gui/PanelTablaExpresiones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modelo/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/modelo/Arbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion4/Practicas/Factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/Consola/Consola.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/Consola/Consola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/gui/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../SistemasOperativos1/FilosofosComensales/gui/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/TestFactorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SQL/BD1/Proyecto/ConexionSimple/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../SQL/BD1/Proyecto/ConexionSimple/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../SQL/BD2/empresa2.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="20h9uM6q0ykJHrv695PIM2Wx3rO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sebastian\OneDrive\Documentos\Visual Studio Code\Proyectos\Java\src\main\Programacion3\practico7y8" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Consola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Programacion3.practico7y8.consola.Consola" />
+      <module name="practico7y8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Programacion3.practico7y8.consola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Consola" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12a52d16-a33a-434d-be34-515cb78de247" name="Changes" comment="" />
+      <created>1636486173723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636486173723</updated>
+      <workItem from="1636486175133" duration="67000" />
+      <workItem from="1639274069470" duration="1387000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

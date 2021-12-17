@@ -4,10 +4,13 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
+import java.io.File;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -17,7 +20,8 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import Programacion3.Lista.Lista2;
+
+import Programacion3.practico7y8.Lista.Lista2;
 import Programacion3.practico7y8.dao.DaoExpresion;
 import Programacion3.practico7y8.dao.FactoryDao;
 import Programacion3.practico7y8.dto.DTOexpresion;
@@ -34,9 +38,14 @@ public class PanelTablaExpresiones extends JPanel implements PropertyChangeListe
     private Image imagen;
     private PropertyChangeSupport observed;
     private ArbolAritmetico arbol;
+    //private BufferedImage imagen;
 
     public PanelTablaExpresiones() {
-        imagen = new ImageIcon(getClass().getClassLoader().getResource("Java/Programacion3/practico7y8/gui/imagenes/servers.png")).getImage();
+        try {
+            imagen = ImageIO.read(new File("imagenes/servers.png"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         tabla1 = new JTable();
         scroll1 = new JScrollPane(tabla1);
         scroll1.setVisible(false);
@@ -84,7 +93,7 @@ public class PanelTablaExpresiones extends JPanel implements PropertyChangeListe
         modificar = new JButton("Modificar");
         eliminar = new JButton("Eliminar");
         dropear = new JButton("Delete All");
-        
+
         insertar.setBounds(30,30,100,50);
         modificar.setBounds(30, 130,100,50);
         eliminar.setBounds(30,250,100,50);

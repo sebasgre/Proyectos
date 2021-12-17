@@ -6,15 +6,14 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import Programacion3.practico7y8.gui.PanelArbol;
 import Programacion3.practico7y8.modelo.ArbolAritmetico;
 
 public class ControladorNuevaExpresion implements ActionListener {
 
-    private  final static Logger logger = LogManager.getLogger();
+    //private  final static Logger logger = LogManager.getLogger();
 
     private ArbolAritmetico modelo;
     private PanelArbol panel;
@@ -40,7 +39,7 @@ public class ControladorNuevaExpresion implements ActionListener {
                 modelo.addObserver(panel);
                 panel.setModelo(modelo);
                 modelo.cambioOk();
-                logger.info("Nueva expresion: " + expresion.getText());
+                //logger.info("Nueva expresion: " + expresion.getText());
             }
         } catch (Exception e1) {
             e1.printStackTrace();

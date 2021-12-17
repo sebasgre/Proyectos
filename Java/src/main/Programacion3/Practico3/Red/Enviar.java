@@ -1,6 +1,4 @@
 package Programacion3.Practico3.Red;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -15,7 +13,7 @@ public class Enviar implements PropertyChangeListener {
     private int posY;
     private boolean check1;
     private boolean check2;
-    private final static Logger logger = LogManager.getLogger();
+    //private final static Logger logger = LogManager.getLogger();
 
     public Enviar(String ip, int puerto) throws IOException {
         sck = new Socket(ip, puerto);
@@ -42,7 +40,7 @@ public class Enviar implements PropertyChangeListener {
         if (check1 && check2) {
             out.println(posX + "|" + posY);
             out.flush();
-            logger.info("Aqui se envia las coordenadas " + posX + " |" + posY);
+            //logger.info("Aqui se envia las coordenadas " + posX + " |" + posY);
             check1 = false;
             check2 = false;
         }
