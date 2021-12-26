@@ -6,357 +6,107 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch Hola",
+            "name": "Launch Main",
             "request": "launch",
-            "mainClass": "Hola",
+            "mainClass": "Programacion3.Animacion.Main.Main",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consola",
+            "request": "launch",
+            "mainClass": "SistemasOperativos1.FilosofosComensales.Consola.Consola",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Programacion3.Practico4.Main.Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consola",
+            "request": "launch",
+            "mainClass": "Programacion3.practico7y8.consola.Consola",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Programacion3.Practico1.Main.Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Programacion3.Animacion.Main.Main",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consola",
+            "request": "launch",
+            "mainClass": "SistemasOperativos1.FilosofosComensales.Consola.Consola",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Prueba.App",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Suma",
+            "request": "launch",
+            "mainClass": "Suma",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "Launch Suma",
+            "request": "launch",
+            "mainClass": "main.java.Suma",
             "projectName": ""
         },
         {
             "type": "java",
-            "name": "Launch Practico1",
+            "name": "Launch App",
             "request": "launch",
-            "mainClass": "Practico1",
+            "mainClass": "main.java.App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "universidad.App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "java.App",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
             "projectName": "demo"
         },
         {
             "type": "java",
-            "name": "Launch Buscador",
+            "name": "Launch Java Program",
             "request": "launch",
-            "mainClass": "Buscador",
-            "projectName": "demo"
-        },
-        {
-            "type": "java",
-            "name": "Launch SesgadoBinario",
-            "request": "launch",
-            "mainClass": "SesgadoBinario",
-            "projectName": "demo"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "demo"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hola",
-            "request": "launch",
-            "mainClass": "Java.demo.src.main.java.Hola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch OrdenarLongitud",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico5.OrdenarLongitud",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Bloques",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico5.Bloques",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico6",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico6",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Analizador",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico5.Analizador",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico3",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico3",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Angulos",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Ejercicios.Angulos",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Prueba",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicas.Prueba",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico4b",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Practico4.Practico4b",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Maximun_sum",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Ejercicios.Maximun_sum",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Dollar",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicos.Ejercicios.Dollar",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico4b",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practico4b",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico3",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practico3",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico2",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practico2",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practicas.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico1",
-            "request": "launch",
-            "mainClass": "Java.Programacion4.Practico1",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Practico1",
-            "request": "launch",
-            "mainClass": "Practico1",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hola",
-            "request": "launch",
-            "mainClass": "prueba.Hola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Consola",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.practico7y8.consola.Consola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hola",
-            "request": "launch",
-            "mainClass": "Java.SistemasOperativos1.FilosofosComensales.Consola.Hola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Ventana",
-            "request": "launch",
-            "mainClass": "SQL.BD1.Proyecto.gui.Ventana",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Practico2.Imagenes.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Practico1.Main.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Consola",
-            "request": "launch",
-            "mainClass": "SQL.BD1.Proyecto.Consola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Practico4.Main.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch FrameArbol",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.practico6.gui.FrameArbol",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Consola",
-            "request": "launch",
-            "mainClass": "Java.SistemasOperativos1.FilosofosComensales.Consola.Consola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch FrameArbol",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Arboles.gui.FrameArbol",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestArbol",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Arboles.TestArbol",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestArbolAritmetico",
-            "request": "launch",
-            "mainClass": "Java.Programacion3.Arboles.aritmetico.TestArbolAritmetico",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Practico2.Imagenes.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch FrameArbol",
-            "request": "launch",
-            "mainClass": "Arboles.gui.FrameArbol",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Nose",
-            "request": "launch",
-            "mainClass": "Logica.Nose",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Hola",
-            "request": "launch",
-            "mainClass": "GUI.Hola",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "Practico4.Main.Main",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch Cliente",
-            "request": "launch",
-            "mainClass": "Red.Cliente",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch mainServidor",
-            "request": "launch",
-            "mainClass": "Main.mainServidor",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch mainClientes",
-            "request": "launch",
-            "mainClass": "Main.mainClientes",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Attach",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": "<debug port of the debuggee>"
-        },
-        {
-            "type": "java",
-            "name": "Launch with Arguments Prompt",
-            "request": "launch",
-            "mainClass": "",
-            "args": "${command:SpecifyProgramArgs}"
-        },
-        {
-            "type": "java",
-            "name": "Launch External Terminal",
-            "request": "launch",
-            "console": "externalTerminal",
             "mainClass": ""
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "request": "attach",
-            "name": "Attach by Process ID",
-            "processId": "${command:PickJavaProcess}"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch mainClientes",
-            "request": "launch",
-            "mainClass": "Practico5.Main.mainClientes",
-            "projectName": "Proyectos_f2fa4dc5"
-        },
-        {
-            "type": "java",
-            "name": "Launch mainServidor",
-            "request": "launch",
-            "mainClass": "Practico5.Main.mainServidor",
-            "projectName": "Proyectos_f2fa4dc5"
         }
     ]
 }

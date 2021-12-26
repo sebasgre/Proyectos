@@ -1,13 +1,23 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\Sebastian\\Downloads\\mysql-connector-java-8.0.25\\mysql-connector-java-8.0.25.jar",
-        "c:\\Users\\Sebastian\\Downloads\\apache-log4j-2.14.1-bin\\apache-log4j-2.14.1-bin\\log4j-api-2.14.1.jar",
-        "c:\\Users\\Sebastian\\Downloads\\apache-log4j-2.14.1-bin\\apache-log4j-2.14.1-bin\\log4j-core-2.14.1.jar"
+        // "c:\\Users\\Sebastian\\Downloads\\mysql-connector-java-8.0.25\\mysql-connector-java-8.0.25.jar",
+        // "c:\\Users\\Sebastian\\Downloads\\apache-log4j-2.14.1-bin\\apache-log4j-2.14.1-bin\\log4j-api-2.14.1.jar",
+        // "c:\\Users\\Sebastian\\Downloads\\apache-log4j-2.14.1-bin\\apache-log4j-2.14.1-bin\\log4j-core-2.14.1.jar"
     ],
     "oneDarkPro.vivid": true,
     "oneDarkPro.bold": true,
-    "oneDarkPro.editorTheme": "oneDarkPro",
+    "oneDarkPro.editorTheme": "One Dark Pro",
     "maven.view": "flat",
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "files.autoSave": "onFocusChange",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.foldingImportsByDefault": true,
+    "workbench.preferredLightColorTheme": "One Dark Pro",
+    "autoimport.showNotifications": true,
+    "java.codeGeneration.generateComments": true,
+    "java.saveActions.organizeImports": true,
+    "java.project.sourcePaths": [
+        "."
+    ]
 }
