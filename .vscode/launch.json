@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AprendiendoASumar",
+            "request": "launch",
+            "mainClass": "Prueba.AprendiendoASumar",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Programacion3.Animacion.Main.Main",
