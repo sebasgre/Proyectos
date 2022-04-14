@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Programacion3.Practico4.Main.Main",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
             "name": "Launch Consola",
             "request": "launch",
             "mainClass": "Programacion3.practico7y8.consola.Consola",
