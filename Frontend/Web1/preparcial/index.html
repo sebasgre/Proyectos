@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica antes del examen</title>
+</head>
+<body>
+    <form oninput="x.value=a.valueAsNumber+b.valueAsNumber">
+        edad <br>
+        <input type="range" name="edad" min="0" max="150"> <br>
+        sueldo <br>
+        <input type="number" name="sueldo" step="3"><br><br>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+        </datalist><br><br>
+        <input type="range" id="a" value="50">
+        +
+        <input type="range" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>    
+    </form>
+</body>
+</html>
