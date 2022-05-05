@@ -9,17 +9,14 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import Programacion3.Practico2.ImagenesTransformadas.Imagenes;
 
 
+
 public class Ventana extends JFrame {
-    private final Modelo modelo = new Modelo(600, 400);
+    private final Modelo modelo = new Modelo(600,400);
     private final PanelImagen panel = new PanelImagen(modelo);
     private final Imagenes imagenes = new Imagenes(modelo);
-    private final static Logger logger = LogManager.getLogger();
 
     public Ventana() {
         init();
@@ -45,7 +42,7 @@ public class Ventana extends JFrame {
         menu.add(item3);
         menu.add(item4);
         bar.add(menu);
-
+        //Hola como estas
         this.setJMenuBar(bar);
         this.getContentPane().setLayout(new BorderLayout());
         this.getContentPane().add(panel, BorderLayout.CENTER);
@@ -56,17 +53,17 @@ public class Ventana extends JFrame {
 
     protected void mnuImagen1() {
         imagenes.hacer1();
-        logger.info("Aqui se carga la imagen 1");
+        //logger.info("Aqui se carga la imagen 1");
     }
 
     protected void mnuImagen2() {
         imagenes.hacer2();
-        logger.info("Aqui se carga la imagen 2");
+        //logger.info("Aqui se carga la imagen 2");
     }
 
     protected void mnuImagen3() {
         imagenes.hacer3();
-        logger.info("Aqui se carga la imagen resultante");
+        //logger.info("Aqui se carga la imagen resultante");
     }
 
     protected void ayuda() {
@@ -84,7 +81,7 @@ public class Ventana extends JFrame {
             repaint();
         });
         this.validate();
-        logger.info("Aqui se muestra el mensaje al usuario, sobre el ejercicio realizado");
+        //logger.info("Aqui se muestra el mensaje al usuario, sobre el ejercicio realizado");
     }
 
 }

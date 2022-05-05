@@ -19,5 +19,6 @@
     "java.saveActions.organizeImports": true,
     "java.project.sourcePaths": [
         "."
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

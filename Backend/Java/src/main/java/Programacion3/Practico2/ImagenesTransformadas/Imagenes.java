@@ -9,20 +9,13 @@ import javax.imageio.ImageIO;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileNameExtensionFilter;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import Programacion3.Practico2.Imagenes.Modelo;
-
-
 
 public class Imagenes extends Transformacion {
     private BufferedImage imagen1;
     private BufferedImage imagen2 = null;
     private Color color1;
     private Color color2;
-    private final static Logger logger = LogManager.getLogger();
     private final JFileChooser chooser = new JFileChooser();
     private File archivo1;
     private File archivo2;
@@ -64,7 +57,7 @@ public class Imagenes extends Transformacion {
 
                 for (int i = ancho1 - 400; i < ancho1 - 200; i++) {
                     for (int j = 0; j < alto1; j++) {
-                        color1 = new Color(imagen1.getRGB(i,j));
+                        color1 = new Color(imagen1.getRGB(i, j));
                         int red = (color1.getRed() << 16) / 2;
                         int green = (color1.getGreen() << 8) / 2;
                         int blue = color1.getBlue() / 2;
@@ -81,7 +74,7 @@ public class Imagenes extends Transformacion {
                 }
                 modeloBase.cambioOk();
                 aprobacion = false;
-                logger.info("En este metodo asignamos los colores que habra en cada pixel");
+                //logger.info("En este metodo asignamos los colores que habra en cada pixel");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -137,7 +130,7 @@ public class Imagenes extends Transformacion {
                 }
                 modeloBase.cambioOk();
                 aprobacion = false;
-                logger.info("En este metodo asignamos los colores que habra en cada pixel");
+                //logger.info("En este metodo asignamos los colores que habra en cada pixel");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -189,7 +182,7 @@ public class Imagenes extends Transformacion {
                     }
                 }
                 modeloBase.cambioOk();
-                logger.info("En este metodo asignamos los colores que habra en cada pixel");
+                //logger.info("En este metodo asignamos los colores que habra en cada pixel");
             } catch (IOException e) {
                 e.printStackTrace();
             }

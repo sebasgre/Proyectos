@@ -1,5 +1,4 @@
 package Programacion3.Practico2.ImagenesTransformadas;
-
 import Programacion3.Practico2.Imagenes.Modelo;
 
 public abstract class Transformacion {
