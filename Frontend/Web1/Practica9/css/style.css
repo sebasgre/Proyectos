@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: rgba(215, 208, 208, 0.795);
+}
+div {
+  background-color: white;
+  padding: 40px;
+}
+* p {
+  font-size: 22px;
+  text-align: left;
+}
+h1 {
+  font-size: 36px;
+  color: #023e8a;
+}
+h4 {
+  color: #023e8a;
+  font-weight: normal;
+  font-size: 26px;
+}
+#logoKoala {
+  padding-left: 40px;
+  width: 1050px;
+  height: 500px;
+}
+#portatil {
+  padding-right: 20px;
+  height: 180px;
+  float: left;
+}
+#musica {
+  padding-left: -10px;
+  width: 700px;
+  height: 320px;
+  float: right;
+}
