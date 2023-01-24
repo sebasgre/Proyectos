@@ -9,8 +9,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import Programacion3.Animacion.Modelo.Figura;
 import Programacion3.Animacion.Vista.DibujoFigura;
@@ -18,7 +16,6 @@ import Programacion3.Animacion.Vista.IDibujo;
 
 public class FrameAnimacion extends JFrame {
     private Figura modelo;
-    private final static Logger logger = LogManager.getLogger();
 
     public FrameAnimacion() {
         modelo = new Figura();
@@ -78,7 +75,6 @@ public class FrameAnimacion extends JFrame {
     protected void mover200() {
         for (int i = 0; i < 200; i++) {
             modelo.setX(modelo.getX() + 2);
-            logger.info("Se esta moviendo en x " + modelo.getX());
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {

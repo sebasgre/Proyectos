@@ -12,8 +12,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import Programacion3.Practico4.Lista.ListaOrdenada;
 import Programacion3.Practico4.Modelo.Persona;
@@ -25,7 +24,7 @@ public class FramePrincipal extends JFrame {
     private final IDibujo dibujo = new DibujarPersona(listaPersonas);
     private final Panel panel = new Panel(dibujo);
     private boolean control = false;
-    private final static Logger logger = LogManager.getLogger();
+
 
     public FramePrincipal() {
         init();
@@ -107,8 +106,7 @@ public class FramePrincipal extends JFrame {
                         listaPersonas.insertar(p);
                         listaPersonas.addObserver(panel);
                         listaPersonas.cambioOk();
-                        logger.debug("Nombre: " + nombreField.getText() + " Edad: " + edad + " Altura: " + altura
-                                + " Genero: " + generoField.getText());
+
                     }
                 } else {
                     String texto;
@@ -122,7 +120,7 @@ public class FramePrincipal extends JFrame {
                     JOptionPane.showMessageDialog(panel, texto);
                 }
             } catch (Exception e) {
-                logger.debug("Error: " + e);
+
             }
         }
 
@@ -132,7 +130,7 @@ public class FramePrincipal extends JFrame {
         dibujo.eliminar();
         listaPersonas.addObserver(panel);
         listaPersonas.cambioOk();
-        logger.debug("Aqui se eliminan las personas de la lista");
+
     }
 
 }

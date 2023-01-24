@@ -11,20 +11,17 @@ import java.beans.PropertyChangeListener;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
 
 import Programacion3.practico6.Arbol.Arbol;
 import Programacion3.practico6.aritmetico.ElementoAritmetico;
 import Programacion3.practico6.aritmetico.Numero;
 import Programacion3.practico6.aritmetico.Operador;
 import Programacion3.practico6.modelo.ArbolAritmetico;
-import Programacion3.practico6.view.DibujoArbol;
 
 public class PanelArbol extends JPanel implements MouseListener, PropertyChangeListener {
 
     private ArbolAritmetico modelo;
-    private final static Logger logger = LogManager.getLogger();
 
     public PanelArbol(ArbolAritmetico obj) {
         modelo = obj;
@@ -63,7 +60,6 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
                 prueba.setRaiz(seleccionado);
                 String operacion = prueba.toString();
                 JOptionPane.showMessageDialog(null, operacion);
-                logger.debug("Aqui mostramos la operacion realizada");
             }
         } catch (Exception exception) {
             exception.printStackTrace();
@@ -82,7 +78,6 @@ public class PanelArbol extends JPanel implements MouseListener, PropertyChangeL
 
         if (e.getX() >= contenedor.getPosX() && e.getX() <= (contenedor.getPosX() + 40)
                 && e.getY() >= contenedor.getPosY() && e.getY() <= (contenedor.getPosY() + 40)) {
-                    logger.debug("Aqui se muestra el posicionamiento del nodo " + e.getX() + " | " + e.getY());
             return contenedor;
         }
 

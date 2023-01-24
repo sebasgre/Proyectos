@@ -3,8 +3,6 @@ package Programacion3.practico6.modelo;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import Programacion3.practico6.Arbol.Arbol;
 import Programacion3.practico6.aritmetico.ElementoAritmetico;
@@ -15,7 +13,6 @@ import Programacion3.practico6.aritmetico.Operador;
 
 public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
     private PropertyChangeSupport observed;
-    private final static Logger logger = LogManager.getLogger();
 
     public ArbolAritmetico() {
         super();
@@ -141,22 +138,18 @@ public class ArbolAritmetico extends Arbol<ElementoAritmetico> {
         Operador operacion = (Operador) elementoAritmetico;
 
         if (operacion.getNombre().equals("Suma")) {
-            logger.debug("aqui se realiza la operacion suma");
             return sumarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Resta")) {
-            logger.debug("aqui se realiza la operacion resta");
             return restarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Multiplica")) {
-            logger.debug("aqui se realiza la operacion multiplicacion");
             return multiplicarHijos(nodo);
         }
 
         if (operacion.getNombre().equals("Divide")) {
-            logger.debug("aqui se realiza la operacion division");
             return dividirHijos(nodo);
         }
         return Double.MIN_VALUE;

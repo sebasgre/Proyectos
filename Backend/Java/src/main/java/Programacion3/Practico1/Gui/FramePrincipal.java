@@ -8,8 +8,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import Programacion3.Practico1.Modelo.Linea;
 import Programacion3.Practico1.Vista.DibujoLinea;
@@ -20,7 +18,6 @@ public class FramePrincipal extends JFrame {
     private Linea[] lineas = new Linea[300];
     private final IDibujo dibujo = new DibujoLinea(lineas);
     private final Panel panel = new Panel(dibujo);
-    private final static Logger logger = LogManager.getLogger();
 
     public FramePrincipal() {
         init();
@@ -72,7 +69,7 @@ public class FramePrincipal extends JFrame {
                     li.addObserver(panel);
                     li.setX(i * 2);
                     lineas[i] = li;
-                    logger.info("Aqui se dibuja linea por linea con el valor de x que cambia en " + li.getX() + " y el alton random con " + li.getAlto());
+
                     Thread.sleep(50);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -91,7 +88,7 @@ public class FramePrincipal extends JFrame {
                     lineas[j].setAlto(aux);
                 }
             }
-            logger.info("Aqui ordenamos de Menor-Mayor linea por linea y mostramos el alto para comprobar " + l[i].getAlto());
+
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
@@ -110,7 +107,7 @@ public class FramePrincipal extends JFrame {
                     lineas[i].setAlto(aux);
                 }
             }
-            logger.info("Aqui ordenamos de Mayor-Menor linea por linea y mostramos el alto para comprobar " + l[i].getAlto());
+
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {

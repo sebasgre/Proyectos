@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04ebdef0-f345-4db3-8949-e974b9566b83" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Practico4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/out/production/SistemasOperativos1/SistemasOperativos1/FilosofosComensales/gui/Frame$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/out/production/SistemasOperativos1/SistemasOperativos1/FilosofosComensales/gui/Frame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SistemasOperativos1/out/production/SistemasOperativos1/SistemasOperativos1/FilosofosComensales/gui/Frame.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lista/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lista/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lista/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lista/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../practico6/Arbol/Lista2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Animacion/Gui/FrameAnimacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Animacion/Gui/FrameAnimacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico1/Gui/FramePrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico1/Gui/FramePrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practico4/Gui/FramePrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practico4/Gui/FramePrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/Practico2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/Practico2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/Practico2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/Programacion3/Programacion3/Practico2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico6/Arbol/Arbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico6/Arbol/Arbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico6/gui/PanelArbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico6/gui/PanelArbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico6/modelo/ArbolAritmetico.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practico6/modelo/ArbolAritmetico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practico6/view/DibujoArbol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programacion4/Ejercicios/E15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programacion4/Ejercicios/E15.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +40,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Sebastian/OneDrive/Documentos/Programas Descargados/jar_files",
+    "last_opened_file_path": "C:/Users/Sebastian/OneDrive/Documentos/Visual Studio Code/Proyectos/Backend/Java/src/main/java/Programacion3/practico7y8",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -64,10 +80,24 @@
       <workItem from="1655998254292" duration="218000" />
       <workItem from="1658193393005" duration="2588000" />
       <workItem from="1658196024111" duration="1420000" />
+      <workItem from="1666322524173" duration="67000" />
+      <workItem from="1666322637893" duration="134000" />
+      <workItem from="1669698479663" duration="320000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

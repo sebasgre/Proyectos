@@ -30,7 +30,6 @@ public class E15 {
                 if (pos > 1)
                     validar -= 2;
             }
-
         }
         System.out.println(sb);
     }

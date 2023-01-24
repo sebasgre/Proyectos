@@ -1,6 +1,6 @@
 package Programacion3.practico6.Arbol;
 
-import Programacion3.Lista.Lista2;
+
 import Programacion3.practico6.gui.Identificable;
 
 public class Arbol<T extends Identificable> {
